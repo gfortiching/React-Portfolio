@@ -1,0 +1,26 @@
+/* HOME PAGE */
+
+.homePage {
+    background-color: rgb(148, 168, 214);
+    padding: 2em 0;
+    margin: 2em 2em 0;
+    border-radius: 1em;
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.homeCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 1em;
+}
+
+.homeCards .card {
+    background-color: rgb(148, 168, 214);
+    width: 300px;
+    height: 300px;
+    padding: 2em 1em;
+    margin: 0;
+}

@@ -1,0 +1,14 @@
+/* PORTFOLIO PAGE */
+
+.portfolioPage {
+    margin: 2em 0 0;
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.countSection {
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(190, 208, 249);
+    border-radius: 2em;
+}

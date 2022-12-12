@@ -1,0 +1,12 @@
+.bodyBg {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    --body-color1: #abcae2;
+    --body-color2: #1f2830;
+    background-color: var(--body-color1);
+    
+  }
+  

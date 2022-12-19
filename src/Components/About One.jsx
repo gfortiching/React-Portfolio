@@ -13,6 +13,14 @@ export default function AboutOne() {
 
     return (
     <>
+    <section className='aboutMe'>
+        <div className="aboutMe-div">
+            <div className="aboutMe-wrapper">
+                <h3 className="aboutMeText">Hello! I'm Jose Gabriel Fortich Fabileña.</h3>
+                <h4 className="aboutMeText">I graduated with a degree of <em>Bachelor of Science in Mathematics</em> at <em>Silliman University</em>, Dumaguete last March 2020.</h4>
+            </div>
+        </div>
+    </section>  
     <section className="aboutOne">
         <div className="title">
             <div className="title-wrapper">

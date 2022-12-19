@@ -1,0 +1,35 @@
+nav.gabriel {
+    position: sticky;
+    left: 2%;
+    top: 2%;
+    float: left;
+    width: 0;
+    margin-top: 2vh;
+    z-index: 999;        
+    cursor: pointer;
+    font-weight: 700;
+} 
+
+nav.gabriel a {
+    text-decoration: none;
+    color: white;
+}
+
+nav.gabriel ul {
+    display: flex;
+}
+
+nav.gabriel li {
+    margin-right: 0.5em;
+    font-family: 'League Spartan', sans-serif;
+    list-style: none;
+    font-size: 1.1em;
+}
+
+nav.gabriel a:hover {
+    color: rgb(63, 96, 160);
+}
+
+nav.gabriel li.active {
+    color: rgb(63, 96, 160);
+}

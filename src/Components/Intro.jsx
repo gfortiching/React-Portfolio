@@ -1,5 +1,6 @@
 import "./CSS/Intro.css"
 import Me from './Images/meTransparent.png'
+import AboutOne from "./About One";
 
 import { useRef, useState } from 'react'
 
@@ -18,6 +19,7 @@ function Intro() {
     return (
     <>
     <main class="introMain">
+    <AboutOne />
     <section className="intro">
         <div className="left">
             <div className="left-wrapper">

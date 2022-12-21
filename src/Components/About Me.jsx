@@ -1,18 +1,18 @@
-import { useRef } from 'react'
-import Portrait from "./Images/meBlack.jpg"
-import Arrow from "./Images/arrow.png"
+// import { useRef } from 'react'
+// import Arrow from "./Images/arrow.png"
+// import AboutOne from './About One'
 import "./CSS/About.css"
-import AboutOne from './About One'
+import Portrait from "./Images/meBlack.jpg"
 
 export default function AboutMe() {
 
-    const next = useRef(null);
-    const scrollToSection = (elementRef) => {
-        window.scrollTo({
-            top: elementRef.current.offsetTop,
-            behavior: "smooth",
-        });
-    };
+    // const next = useRef(null);
+    // const scrollToSection = (elementRef) => {
+    //     window.scrollTo({
+    //         top: elementRef.current.offsetTop,
+    //         behavior: "smooth",
+    //     });
+    // };
 
     return (
     <>
@@ -28,11 +28,11 @@ export default function AboutMe() {
             <span>E</span>
         </div>
             <img className='blackPortrait' src={Portrait} alt='' />
-        <div className="keepScrolling" onClick={() => scrollToSection(next)}>
+        {/* <div className="keepScrolling" onClick={() => scrollToSection(next)}>
             <img src={Arrow} alt="" className='arrowScrolling'/>
-        </div>
+        </div> */}
     </section>
-    <section ref={next}><AboutOne /></section>
+    {/* <section ref={next}><AboutOne /></section> */}
     </>
 )
 }

@@ -1,35 +1,122 @@
 nav.gabriel {
     position: sticky;
-    left: 2%;
-    top: 2%;
     float: left;
+    left: 0;
+    top: 0;
     width: 0;
-    margin-top: 2vh;
+    height: 100vh;
     z-index: 999;        
     cursor: pointer;
     font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 } 
 
-nav.gabriel a {
+nav.gabriel li {
     text-decoration: none;
     color: white;
 }
 
 nav.gabriel ul {
+    margin: 1em 0 0;
     display: flex;
 }
 
 nav.gabriel li {
-    margin-right: 0.5em;
     font-family: 'League Spartan', sans-serif;
     list-style: none;
     font-size: 1.1em;
+    margin-right: 1.5em;
 }
 
-nav.gabriel a:hover {
+nav.gabriel li:hover {
     color: rgb(63, 96, 160);
 }
 
-nav.gabriel li.active {
-    color: rgb(63, 96, 160);
+.linkedIn {
+    padding: 0 2em 1.5em;
+    display: flex;
+    justify-content: center;
 }
+
+.linkedIn a {
+    color: white;
+}
+
+.linkedIn a:hover {
+    color: rgb(83, 95, 181);
+}
+
+.linkedIn:hover {
+    color: rgba(171, 177, 183, 0.975);
+}
+
+.linkedIn i {
+    font-size: 2em;
+}
+
+/* Nav Drawer */
+
+.navDrawer {
+    display: none;
+}
+
+
+.hideAnchor {
+    display: none;
+}
+
+.dashboardIcon {
+    color: rgb(255, 255, 255);
+    margin-top: 1em;
+}
+
+@media all and (max-width: 576px) {
+    .navDrawer {
+        display: flex;
+        position: sticky;
+        float: left;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100vh;
+        z-index: 999;        
+        cursor: pointer;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    nav.gabriel ul {
+        display: none;
+    } 
+
+    .linkedIn {
+        position: absolute;
+        bottom: 3%;
+        padding: 0;
+        margin: 0 1em;
+    }
+}
+
+/* Scroll Down */
+
+.keepScrolling {
+    position: absolute;
+    bottom: 5%;
+    margin: auto;
+    color: rgb(13, 8, 76);
+    cursor: pointer;
+  }
+
+  .arrowScrolling {
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrowScrolling:hover {
+    -webkit-animation: heartbeat 1s ease-in-out infinite both;
+    animation: heartbeat 1s ease-in-out infinite both;
+  }

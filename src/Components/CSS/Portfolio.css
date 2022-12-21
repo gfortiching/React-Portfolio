@@ -1,10 +1,110 @@
 .portfolioBg {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  --body-color1: #abcae2;
-  background-color: var(--body-color1);
-  
+  background-color: #000000; 
+}
+
+.cards {
+  background-color: rgb(179, 214, 191);
+  border: 2px solid white;
+  /* box-shadow: 0 0 2em white; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 70vh;
+  width: 80vw;
+  border-radius: 1em;
+}
+
+.mp1 h1 {
+  margin: 0.5em 0;
+  color: rgb(33, 118, 33);
+  font-weight: 700;
+  text-align: center;
+}
+
+.mp1Body {
+  display: flex;
+  padding: 2em;
+}
+
+.mp1Text {
+  padding: 0 2em;
+}
+
+.mp1Text p {
+  font-weight: 700;
+}
+
+.mp1Img {
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.mp1ImgView  {
+  margin: auto;
+  text-align: center;
+  padding: 0;
+  color: #fff;
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+
+.mp1ImgView a {
+  text-decoration: none;
+  border: 0;
+  background-color: rgb(32, 129, 32);
+  color: white;
+  font-weight: 600;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+}
+
+.mp1ImgView a:hover {
+  color: rgb(16, 83, 22);
+  background-color: #87c490;
+}
+
+.mp1Img img {
+  width: 500px;
+  object-fit: cover;
+  padding: 1em;
+  background-color: rgb(42, 53, 42);
+  border-radius: 1em;
+  position: relative;
+}
+
+
+.mp2 h1 {
+  margin: 1em 0;
+  color: rgb(66, 112, 66);
+}
+
+/* Portfolio CSS Animation */
+
+.checkOut {
+  height: 10vh;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+.checkOut div {
+  padding: 0 5em;
+  /* background: white; */
+}
+
+.checkOut h1 {
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.5em 0;
+  color: #ffffff;
+  white-space: nowrap;
+  text-transform: uppercase;
 }

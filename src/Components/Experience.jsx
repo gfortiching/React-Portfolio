@@ -1,6 +1,6 @@
 import "./CSS/Experience.css"
-import { useRef } from 'react'
-import Arrow from "./Images/arrow.png"
+// import { useRef } from 'react'
+// import Arrow from "./Images/arrow.png"
 
 import * as React from 'react';
 import Timeline from '@mui/lab/Timeline';
@@ -18,13 +18,13 @@ import Typography from '@mui/material/Typography';
 
 export default function Experience() {
 
-    const next = useRef(null);
-    const scrollToSection = (elementRef) => {
-        window.scrollTo({
-            top: elementRef.current.offsetTop,
-            behavior: "smooth",
-        });
-    };
+    // const next = useRef(null);
+    // const scrollToSection = (elementRef) => {
+    //     window.scrollTo({
+    //         top: elementRef.current.offsetTop,
+    //         behavior: "smooth",
+    //     });
+    // };
 
     return (
     <>
@@ -108,11 +108,11 @@ export default function Experience() {
             </TimelineItem>
         </Timeline>
         </div>
-        <div className="keepScrolling" onClick={() => scrollToSection(next)}>
+        {/* <div className="keepScrolling" onClick={() => scrollToSection(next)}>
             <img src={Arrow} alt="" className='arrowScrolling'/>
-        </div>
+        </div> */}
     </section>
-    <section ref={next}></section>
+    {/* <section ref={next}></section> */}
     </>
 
 )

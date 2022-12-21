@@ -5,9 +5,15 @@ import Portfolio from "./Components/Portfolio"
 import Contact from "./Components/Contact"
 import Experience from "./Components/Experience"
 import { useRef } from 'react'
-import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 import "./Components/CSS/App.css"
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+
 
 function App() {
 
@@ -23,32 +29,74 @@ function App() {
       });
   };
 
-  function CustomLink({ to, children, ...props}) {
-    const resolvedPath = useResolvedPath()
-    const isActive = useMatch({ path: resolvedPath.pathname, end: true})
-    return (
-        <li className={isActive ? "active": ""}>
-            <Link to={to} {...props}>{children}</Link>
-        </li>
-    )
-  }
+  const [state, setState] = React.useState({
+    top: false,
+    left: false,
+    bottom: false,
+    right: false,
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
+
+  const list = (anchor) => (
+    <Box
+      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+        <ul>
+          <li onClick={() => scrollToSection(intro)}>gabriel</li>
+          <li onClick={() => scrollToSection(portfolio)}>portfolio</li>
+          <li onClick={() => scrollToSection(about)}>about</li>
+          <li onClick={() => scrollToSection(experience)}>experience</li>
+          <li onClick={() => scrollToSection(contact)}>contact</li>
+        </ul>
+    </Box>
+  );
 
   return (
     <>
       <section ref={intro}><Intro /></section>
+      <div class="navDrawer">
+          {['left'].map((anchor) => (
+          <React.Fragment key={anchor}>
+          <Button onClick={toggleDrawer(anchor, true)}>
+              <span className="hideAnchor">{anchor}</span>
+              <span className="dashboardIcon"><DashboardIcon /></span>
+          </Button>
+          <Drawer
+            anchor={anchor}
+            open={state[anchor]}
+            onClose={toggleDrawer(anchor, false)}
+          >
+            {list(anchor)}
+          </Drawer>
+        </React.Fragment>
+          ))}
+        </div>
       <nav className="gabriel">
         <ul>
-          <li onClick={() => scrollToSection(intro)}><CustomLink>gabriel</CustomLink></li>
-          <li onClick={() => scrollToSection(about)}><CustomLink>about</CustomLink></li>
-          <li onClick={() => scrollToSection(experience)}><CustomLink>experience</CustomLink></li>
-          <li onClick={() => scrollToSection(contact)}><CustomLink>contact</CustomLink></li>
-          <li onClick={() => scrollToSection(portfolio)}><CustomLink>portfolio</CustomLink></li>
+          <li onClick={() => scrollToSection(intro)}>gabriel</li>
+          <li onClick={() => scrollToSection(portfolio)}>portfolio</li>
+          <li onClick={() => scrollToSection(about)}>about</li>
+          <li onClick={() => scrollToSection(experience)}>experience</li>
+          <li onClick={() => scrollToSection(contact)}>contact</li>
         </ul>
+        <div className="linkedIn">
+          <a href="https://www.linkedin.com/in/gabrielfabilena/" target="blank"><LinkedInIcon sx={{fontSize: "2em"}}/></a>
+        </div>
       </nav>
+      <section ref={portfolio}><Portfolio /></section>
       <section ref={about}><AboutMe /></section>
       <section ref={experience}><Experience /></section>
       <section ref={contact}><Contact /></section>
-      <section ref={portfolio}><Portfolio /></section>
     </>
   )
 }

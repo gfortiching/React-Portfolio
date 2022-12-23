@@ -10,7 +10,7 @@ import MP2 from "./MP2";
 function Portfolio() {
 
   useEffect(() => {
-    AOS.init({duration: 3000});
+    AOS.init({duration: 2000});
   }, []);
 
   const mp1 = useRef(null);
@@ -28,7 +28,7 @@ function Portfolio() {
     <section className="portfolioBg">
       <article className="checkOut">
           <div data-aos="fade-right">
-            <h1>CHECK OUT MY SOME OF MY KODEGO PROJECTS</h1>
+            <h1>CHECK OUT SOME OF MY KODEGO PROJECTS</h1>
           </div>
       </article>
       <div className="keepScrolling" onClick={() => scrollToSection(mp1)}>
@@ -37,7 +37,7 @@ function Portfolio() {
     </section>
 
     <section className="portfolioBg" ref={mp1}>
-      <div className="cards" data-aos="fade-left">
+      <div data-aos="zoom-in">
         <MP1 />
       </div>
       <div className="keepScrolling" onClick={() => scrollToSection(mp2)}>
@@ -46,7 +46,7 @@ function Portfolio() {
     </section>
 
     <section className="portfolioBg" ref={mp2}>
-      <div className="cards">
+      <div data-aos="zoom-in">
         <MP2 />
       </div>
       <div className="keepScrolling" onClick={() => scrollToSection(about)}>

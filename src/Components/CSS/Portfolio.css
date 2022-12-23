@@ -7,104 +7,121 @@
   background-color: #000000; 
 }
 
-.cards {
-  background-color: rgb(179, 214, 191);
-  border: 2px solid white;
-  /* box-shadow: 0 0 2em white; */
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 70vh;
-  width: 80vw;
+/* Mini Project 1 */
+
+.mp1 {
+  /* background-color: rgb(179, 214, 191); */
+  /* border: 2px solid white; */
+  height: 75vh;
+  width: 90vw;
   border-radius: 1em;
 }
 
 .mp1 h1 {
-  margin: 0.5em 0;
-  color: rgb(33, 118, 33);
+  color: rgb(96, 176, 96);
   font-weight: 700;
   text-align: center;
-}
-
-.mp1Body {
-  display: flex;
-  padding: 2em;
-}
-
-.mp1Text {
-  padding: 0 2em;
 }
 
 .mp1Text p {
-  font-weight: 700;
+  text-align: justify;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: white;
 }
 
 .mp1Img {
-  position: relative;
-  transition: 0.5s ease-in-out;
-}
-
-.mp1ImgView  {
-  margin: auto;
-  text-align: center;
-  padding: 0;
-  color: #fff;
-  transform: translateY(30px);
-  transition: 0.5s all;
-}
-
-.mp1ImgView a {
-  text-decoration: none;
-  border: 0;
-  background-color: rgb(32, 129, 32);
-  color: white;
-  font-weight: 600;
-  border-radius: 1em;
-  padding: 0.5em 1em;
-}
-
-.mp1ImgView a:hover {
-  color: rgb(16, 83, 22);
-  background-color: #87c490;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em 0;
 }
 
 .mp1Img img {
-  width: 500px;
+  margin: auto;
   object-fit: cover;
-  padding: 1em;
   background-color: rgb(42, 53, 42);
-  border-radius: 1em;
-  position: relative;
+  padding: 0.5em;
+  max-width: 500px;
 }
 
+@media all and (max-width: 576px) {
+  .mp1Img img {
+    width: 85vw;
+  }
+
+  .mp1Text p {
+    font-size: 1.2em;
+  }
+}
+
+/* Mini Project 2 */
+
+.mp2 {
+  height: 75vh;
+  width: 90vw;
+  border-radius: 1em;
+}
 
 .mp2 h1 {
-  margin: 1em 0;
-  color: rgb(66, 112, 66);
+  color: rgb(173, 142, 224);
+  font-weight: 700;
+  text-align: center;
+}
+
+.mp2Text p {
+  text-align: justify;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: white;
+}
+
+.mp2Img {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em 0;
+}
+
+.mp2Img img {
+  margin: auto;
+  object-fit: cover;
+  background-color: rgb(42, 53, 42);
+  padding: 0.5em;
+  width: 500px;
+}
+
+@media all and (max-width: 576px) {
+  .mp2Img img {
+    width: 85vw;
+  }
+
+  .mp2Text p {
+    font-size: 1.2em;
+  }
 }
 
 /* Portfolio CSS Animation */
 
 .checkOut {
-  height: 10vh;
   display: flex;
   width: 100vw;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.082);
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  box-shadow: 0 0 3em white;
   /* overflow: hidden; */
 }
 
 .checkOut div {
-  padding: 0 5em;
+  padding: 0;
   /* background: white; */
 }
 
 .checkOut h1 {
-  font-size: 3em;
   font-weight: 700;
   text-align: center;
   padding: 0.5em 0;
   color: #ffffff;
-  white-space: nowrap;
   text-transform: uppercase;
 }

@@ -4,7 +4,6 @@
     -webkit-animation: color-change-2x 2s linear infinite alternate both;
     animation: color-change-2x 2s linear infinite alternate both;
     display: flex;
-
 }
 
 .intro {
@@ -45,7 +44,7 @@
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     color: rgb(255, 255, 255);
 }
 
@@ -214,7 +213,7 @@
     }
   }
   
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 800px) {
 
     .introMain {
       height: 100vh;
@@ -240,6 +239,55 @@
     .name {
       margin-top: 0.5em;
       font-size: 3em;
+    }
+  
+    .left-wrapper {
+      margin: 0 3vw;
+      left: 0;
+      right: 0;
+      bottom: 20%;
+      position: absolute;
+      z-index: 999;
+    }
+  
+    .getToKnow {
+      gap: 2em;
+      left: 0;
+      bottom: 7%;
+      right: 0;
+      position: absolute;
+      background-color: transparent;
+      text-align: center;
+      margin: auto;
+    }
+  }
+
+  @media all and (max-width: 576px) {
+
+    .introMain {
+      height: 100vh;
+      padding: 1em;
+      margin: auto;
+      justify-content: center;
+      position: relative;
+    }
+  
+    .myImg {
+      opacity: 0.5;
+      max-height: inherit;
+      min-height: 25vh;
+      max-width: 50vw;
+      display: none;
+    }
+  
+    .greet {
+      font-size: 2.5em;
+      font-weight: 300;
+    }
+  
+    .name {
+      margin-top: 0.5em;
+      font-size: 2.5em;
     }
   
     .left-wrapper {

@@ -105,7 +105,7 @@ nav.gabriel li:hover {
 
 .keepScrolling {
     position: absolute;
-    bottom: 5%;
+    bottom: 2%;
     margin: auto;
     color: rgb(13, 8, 76);
     cursor: pointer;

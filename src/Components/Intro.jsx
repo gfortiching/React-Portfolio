@@ -1,10 +1,12 @@
 import "./CSS/Intro.css"
 import Me from './Images/meTransparent.png'
-import AboutOne from "./About One";
-
+import Skills from "./IntroSkills";
 import { useRef, useState } from 'react'
 
+
 function Intro() {
+
+    const [headText, setHeadText] = useState("Get to know me!");
 
     const next = useRef(null);
     const scrollToSection = (elementRef) => {
@@ -14,12 +16,10 @@ function Intro() {
         });
     };
 
-    const [headText, setHeadText] = useState("Get to know me!");
-
     return (
     <>
-    <main class="introMain">
-    <AboutOne />
+    <main className="introMain">
+    <Skills />
     <section className="intro">
         <div className="left">
             <div className="left-wrapper">

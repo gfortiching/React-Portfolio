@@ -6,10 +6,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    --body-color1: #070707;
-    background-color: var(--body-color1);
+    background-image: linear-gradient(to right, #151414, #131212, #0a0a0a, #0a0a0a, #0a0a0a); border: 0;
+    overflow: hidden;
 }
-
 
 .blackPortrait {
     max-height: 100vh;
@@ -103,7 +102,8 @@
 
   /* Animation */
 
-  @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -145,69 +145,8 @@
     transform: translateY(-20px)
   }
 }
-
-/* About One */
-
-.aboutOne {
-    height: 10vh;
-    position: fixed;
-    top: 2%;
-    display: flex;
-    justify-content: center;
-    animation: move-rtl 12s linear infinite;
-}
-  
-.aboutOne h1 {
-    overflow: hidden;
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #ffffff;
-    padding: 0 2rem;
-    white-space: nowrap;
-    text-transform: uppercase;
-}
-
-@keyframes move-rtl {
-    0% {
-      transform: translateX(110%);
-    }
-
-    100% {
-      transform: translateX(-120%);
-    }
-}
-  
-@media all and (min-width: 576px) and (max-width: 768px) {
-    .title {
-      height: 6em;
-      overflow: hidden;
-      line-height: 12em;
-  }
-  
-    .title-item {
-      height: auto;
-      font-size: 5em;
-      font-weight: bold;
-      text-align: center;
-      margin: 1em 0;
-    }
-  
-    .title-item {
-      font-size: 3em;
-    }
-  }
   
   @media all and (max-width: 576px) {
-    .title {
-      height: 5em;
-      overflow: hidden;
-      line-height: 12em;
-    }
-  
-    .title-item {
-      font-size: 2em;
-      margin: 1em 0;
-    }
 
     .waviy {
       position: absolute;
@@ -222,4 +161,10 @@
         transform: translateX(-200px);
         }
       }
+  }
+
+  /* Education */
+
+  .education {
+    height: 100vh;
   }

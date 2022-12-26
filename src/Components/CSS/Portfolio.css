@@ -1,102 +1,12 @@
 .portfolioBg {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: #000000; 
-}
-
-/* Mini Project 1 */
-
-.mp1 {
-  /* background-color: rgb(179, 214, 191); */
-  /* border: 2px solid white; */
-  height: 75vh;
-  width: 90vw;
-  border-radius: 1em;
-}
-
-.mp1 h1 {
-  color: rgb(96, 176, 96);
-  font-weight: 700;
-  text-align: center;
-}
-
-.mp1Text p {
-  text-align: justify;
-  font-size: 1.4em;
-  font-weight: 600;
-  color: white;
-}
-
-.mp1Img {
-  display: flex;
-  justify-content: center;
-  padding: 0.5em 0;
-}
-
-.mp1Img img {
-  margin: auto;
-  object-fit: cover;
-  background-color: rgb(42, 53, 42);
-  padding: 0.5em;
-  max-width: 500px;
-}
-
-@media all and (max-width: 576px) {
-  .mp1Img img {
-    width: 85vw;
-  }
-
-  .mp1Text p {
-    font-size: 1.2em;
-  }
-}
-
-/* Mini Project 2 */
-
-.mp2 {
-  height: 75vh;
-  width: 90vw;
-  border-radius: 1em;
-}
-
-.mp2 h1 {
-  color: rgb(173, 142, 224);
-  font-weight: 700;
-  text-align: center;
-}
-
-.mp2Text p {
-  text-align: justify;
-  font-size: 1.4em;
-  font-weight: 600;
-  color: white;
-}
-
-.mp2Img {
-  display: flex;
-  justify-content: center;
-  padding: 0.5em 0;
-}
-
-.mp2Img img {
-  margin: auto;
-  object-fit: cover;
-  background-color: rgb(42, 53, 42);
-  padding: 0.5em;
-  width: 500px;
-}
-
-@media all and (max-width: 576px) {
-  .mp2Img img {
-    width: 85vw;
-  }
-
-  .mp2Text p {
-    font-size: 1.2em;
-  }
+  background-image: linear-gradient(to right, #151414, #131212, #101010, #0d0d0d, #0a0a0a); border: 0;
+  border: 0;
+  font-family: 'League Spartan', sans-serif;
 }
 
 /* Portfolio CSS Animation */
@@ -105,12 +15,13 @@
   display: flex;
   width: 100vw;
   justify-content: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.082);
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  box-shadow: 0 0 3em white;
+  backdrop-filter: blur(5px);
+  /* border-top: 2px solid white; */
+  /* border-bottom: 2px solid white; */
+  /* box-shadow: 0 0 3em white; */
   /* overflow: hidden; */
+  margin: auto 0 20vh;
+  z-index: 1;
 }
 
 .checkOut div {
@@ -121,7 +32,143 @@
 .checkOut h1 {
   font-weight: 700;
   text-align: center;
-  padding: 0.5em 0;
+  padding: 0.5em 0.5em;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+/* KodeGo Image */
+
+.kodego {
+  position: absolute;
+  z-index: 0;
+  top: 15%;
+  right: auto;
+  left: auto;
+}
+
+.kodego img {
+  height: 30vh;
+}
+
+.portfolioBgOne {
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+}
+
+.one {
+  margin-left: 5vw;
+  position: sticky;
+  left: 0%;
+}
+
+.portfolioBgTwo {
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+}
+
+.two {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.portfolioBgThree {
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.three {
+  margin-left: 5vw;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+}
+
+.portfolioBgFour {
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.four {
+  margin-right: 5vw;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+}
+
+.portfolioBgFive {
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.five {
+  margin-left: 5vw;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+}
+
+.portfolioBgSix {
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  height: 120vh;
+  display: flex;
+  background-image: linear-gradient(to right, #151414, #131212, #101010, #0d0d0d, #0a0a0a); border: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+.six {
+  margin-right: 5vw;
+  bottom: 20%;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+}
+
+article {
+  width: 100vw;
+}
+
+
+article h2, article h1 {
+  font-family: 'League Spartan', sans-serif;
+  color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 0;
+}
+
+.one h1 {
+  text-align: start;
+}
+
+.two h1 {
+  text-align: center;
+}
+
+.three h2 {
+  text-align: start;
+}
+
+.four h2 {
+  text-align: end;
+}
+
+.six h2 {
+  text-align: end;
+}
+
+.portfolioConvo {
+  height: 100vh;
+  display: flex;
+  background-image: linear-gradient(to right, #151414, #131212, #101010, #0d0d0d, #0a0a0a); border: 0;
+  border: 0;
+  overflow: hidden;
 }

@@ -1,10 +1,8 @@
-.experienceBg {
+.experienceBg { 
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    --body-color1: #a3e6fc;
-    background-color: var(--body-color1);
-    
+    background-color: #91cad2;
   }

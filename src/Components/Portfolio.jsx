@@ -3,19 +3,21 @@ import Arrow from "./Images/arrow.png";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "./CSS/Portfolio.css";
-import MP1 from "./MP1";
-import MP2 from "./MP2";
-
+import RootsAndTools from "./Images/MP1.PNG"
+import LittleWizards from "./Images/MP2.PNG"
+import Story from './Story';
+import Kodego from "./Images/KodeGo.png"
+import "./CSS/Mini Project.css"
 
 function Portfolio() {
+
+  AOS.init();
 
   useEffect(() => {
     AOS.init({duration: 2000});
   }, []);
 
   const mp1 = useRef(null);
-  const mp2 = useRef(null);
-  const about = useRef(null);
   const scrollToSection = (elementRef) => {
       window.scrollTo({
           top: elementRef.current.offsetTop,
@@ -26,6 +28,7 @@ function Portfolio() {
     return (
     <>
     <section className="portfolioBg">
+    <div className='kodego'><img src={Kodego} alt="" /></div>
       <article className="checkOut">
           <div data-aos="fade-right">
             <h1>CHECK OUT SOME OF MY KODEGO PROJECTS</h1>
@@ -36,24 +39,31 @@ function Portfolio() {
       </div>
     </section>
 
-    <section className="portfolioBg" ref={mp1}>
-      <div data-aos="zoom-in">
-        <MP1 />
-      </div>
-      <div className="keepScrolling" onClick={() => scrollToSection(mp2)}>
-        <img src={Arrow} alt="" className='arrowScrolling'/>
+    <section className="portfolioLinks" ref={mp1}>
+      <header data-aos="fade-right"><h2>KodeGo Mini Projects</h2></header>
+      <div className='flexContainer d-flex justify-content-center flex-column flex-md-row' data-aos="zoom-in">
+      <article className="miniProject">
+            <div className="miniProjectImg">
+                <img src={RootsAndTools} alt="" loading="lazy"/>
+            </div>
+            <div className="miniProjectText">
+            <h1>Roots and Tools Essentials</h1>
+                <p>Roots and Tools Essentials was built using HTML, CSS and Bootstrap. My inspiration for this project and niche is my hobby for succulents.</p>
+            </div>
+        </article>
+        <article className="miniProject">
+            <div className="miniProjectImg">
+                <img src={LittleWizards} alt="" loading="lazy"/>
+            </div>
+            <div className="miniProjectText2">
+                <h1>Little Wizards</h1>
+                    <p>Little Wizards was built using HTML, CSS, Bootstrap and JavaScript. Our goal for this KodeGo Project is to create an eLearning website using HTML, CSS, Bootstrap and JavaScript.</p>
+            </div>
+        </article>
       </div>
     </section>
-
-    <section className="portfolioBg" ref={mp2}>
-      <div data-aos="zoom-in">
-        <MP2 />
-      </div>
-      <div className="keepScrolling" onClick={() => scrollToSection(about)}>
-        <img src={Arrow} alt="" className='arrowScrolling'/>
-      </div>
-    </section>
-    <section ref={about}></section>
+    
+    <Story />
     </>
 )
 }

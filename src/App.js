@@ -64,7 +64,10 @@ function App() {
   return (
     <>
       <section ref={intro}><Intro /></section>
-      <div class="navDrawer">
+      <aside className="linkedIn">
+          <a href="https://www.linkedin.com/in/gabrielfabilena/" target="blank"><LinkedInIcon sx={{fontSize: "2em"}}/></a>
+      </aside>
+      <div className="navDrawer">
           {['left'].map((anchor) => (
           <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>
@@ -80,18 +83,15 @@ function App() {
           </Drawer>
         </React.Fragment>
           ))}
-        </div>
-      <nav className="gabriel">
-        <ul>
-          <li onClick={() => scrollToSection(intro)}>gabriel</li>
-          <li onClick={() => scrollToSection(portfolio)}>portfolio</li>
-          <li onClick={() => scrollToSection(about)}>about</li>
-          <li onClick={() => scrollToSection(experience)}>experience</li>
-          <li onClick={() => scrollToSection(contact)}>contact</li>
-        </ul>
-        <div className="linkedIn">
-          <a href="https://www.linkedin.com/in/gabrielfabilena/" target="blank"><LinkedInIcon sx={{fontSize: "2em"}}/></a>
-        </div>
+      </div>
+      <nav className="navbar">
+          <ul>
+            <li onClick={() => scrollToSection(intro)}>gabriel</li>
+            <li onClick={() => scrollToSection(portfolio)}>portfolio</li>
+            <li onClick={() => scrollToSection(about)}>about</li>
+            <li onClick={() => scrollToSection(experience)}>experience</li>
+            <li onClick={() => scrollToSection(contact)}>contact</li>
+          </ul>
       </nav>
       <section ref={portfolio}><Portfolio /></section>
       <section ref={about}><AboutMe /></section>

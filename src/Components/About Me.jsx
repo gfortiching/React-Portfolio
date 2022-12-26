@@ -1,23 +1,20 @@
-// import { useRef } from 'react'
-// import Arrow from "./Images/arrow.png"
-// import AboutOne from './About One'
 import "./CSS/About.css"
 import Portrait from "./Images/meBlack.jpg"
+import React, { useEffect } from "react";
+import AOS from "aos";
 
-export default function AboutMe() {
+function AboutMe() {
 
-    // const next = useRef(null);
-    // const scrollToSection = (elementRef) => {
-    //     window.scrollTo({
-    //         top: elementRef.current.offsetTop,
-    //         behavior: "smooth",
-    //     });
-    // };
+    AOS.init();
+
+    useEffect(() => {
+      AOS.init({duration: 2000});
+    }, []);
 
     return (
     <>
     <section className="aboutMe">
-        <div class="waviy">
+        <div className="waviy" data-aos="fade-right">
             <span>A</span>
             <span>B</span>
             <span>O</span>
@@ -27,12 +24,10 @@ export default function AboutMe() {
             <span>M</span>
             <span>E</span>
         </div>
-            <img className='blackPortrait' src={Portrait} alt='' />
-        {/* <div className="keepScrolling" onClick={() => scrollToSection(next)}>
-            <img src={Arrow} alt="" className='arrowScrolling'/>
-        </div> */}
+            <img className='blackPortrait' src={Portrait} alt='' data-aos="fade-left" />
     </section>
-    {/* <section ref={next}><AboutOne /></section> */}
     </>
 )
 }
+
+export default AboutMe;

@@ -1,8 +1,8 @@
-function AboutOne() {
+function Skills() {
 
     return (
     <>
-    <section className="aboutOne">
+    <section className="skills">
         <h1>Full-Stack Web Developer</h1>
         <h1>HTML</h1>
         <h1>CSS</h1>
@@ -10,10 +10,9 @@ function AboutOne() {
         <h1>JavaScript</h1>
         <h1>REACT JS</h1>
         <h1>PHP</h1>
-
     </section>
     </>
 )
 }
 
-export default AboutOne;
+export default Skills;

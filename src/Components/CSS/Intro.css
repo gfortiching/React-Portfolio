@@ -1,9 +1,12 @@
 .introMain {
     height: 100vh;
     padding: 5vh 5vw;
+    margin: 0;
     -webkit-animation: color-change-2x 2s linear infinite alternate both;
     animation: color-change-2x 2s linear infinite alternate both;
     display: flex;
+    overflow: hidden;
+    position: relative;
 }
 
 .intro {
@@ -38,6 +41,36 @@
         background: #076aa4;
     }
   }
+
+/* Skills Animation */
+
+.skills {
+  height: 10vh;
+  position: absolute;
+  top: 2%;
+  display: flex;
+  justify-content: center;
+  animation: move-rtl 12s linear infinite;
+}
+
+.skills h1 {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0 2rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(110%);
+  }
+
+  100% {
+    transform: translateX(-120%);
+  }
+}
   
 
 .left {
@@ -89,7 +122,6 @@
   width: 250px;
   text-shadow: 0 0 0.125em rgb(15, 24, 101), 0 0 0.45em #ffffff;
   box-shadow: inset 0 0 0.5em #ffffff, 0 0 0.5em 0 #ffffff;
-  
 }
 
 .getToKnow::before {

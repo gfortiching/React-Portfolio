@@ -39,15 +39,15 @@ function Portfolio() {
       </div>
     </section>
 
-    <section className="portfolioLinks" ref={mp1}>
-      <header data-aos="fade-right"><h2>KodeGo Mini Projects</h2></header>
+    <section className="portfolioContainer" ref={mp1}>
+      <header data-aos="fade-right"><h1 className='text-center text-sm-start'>KodeGo Mini Projects</h1></header>
       <div className='flexContainer d-flex justify-content-center flex-column flex-md-row' data-aos="zoom-in">
-      <article className="miniProject">
+        <article className="miniProject">
             <div className="miniProjectImg">
                 <img src={RootsAndTools} alt="" loading="lazy"/>
             </div>
             <div className="miniProjectText">
-            <h1>Roots and Tools Essentials</h1>
+                <h1 className='mb-2'>Roots and Tools Essentials</h1>
                 <p>Roots and Tools Essentials was built using HTML, CSS and Bootstrap. My inspiration for this project and niche is my hobby for succulents.</p>
             </div>
         </article>
@@ -56,8 +56,8 @@ function Portfolio() {
                 <img src={LittleWizards} alt="" loading="lazy"/>
             </div>
             <div className="miniProjectText2">
-                <h1>Little Wizards</h1>
-                    <p>Little Wizards was built using HTML, CSS, Bootstrap and JavaScript. Our goal for this KodeGo Project is to create an eLearning website using HTML, CSS, Bootstrap and JavaScript.</p>
+                <h1 className='mb-2'>Little Wizards</h1>
+                <p>Little Wizards was built using HTML, CSS, Bootstrap and JavaScript. Our goal for this KodeGo Project is to create an eLearning website using HTML, CSS, Bootstrap and JavaScript.</p>
             </div>
         </article>
       </div>

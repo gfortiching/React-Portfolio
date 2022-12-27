@@ -3,7 +3,6 @@ import Intro from "./Components/Intro"
 import AboutMe from "./Components/About Me"
 import Portfolio from "./Components/Portfolio"
 import Contact from "./Components/Contact"
-import Experience from "./Components/Experience"
 import { useRef } from 'react'
 
 import "./Components/CSS/App.css"
@@ -19,7 +18,6 @@ function App() {
 
   const intro = useRef(null);
   const about = useRef(null);
-  const experience = useRef(null);
   const contact = useRef(null);
   const portfolio = useRef(null);
   const scrollToSection = (elementRef) => {
@@ -55,7 +53,6 @@ function App() {
           <li onClick={() => scrollToSection(intro)}>gabriel</li>
           <li onClick={() => scrollToSection(portfolio)}>portfolio</li>
           <li onClick={() => scrollToSection(about)}>about</li>
-          <li onClick={() => scrollToSection(experience)}>experience</li>
           <li onClick={() => scrollToSection(contact)}>contact</li>
         </ul>
     </Box>
@@ -89,14 +86,11 @@ function App() {
             <li onClick={() => scrollToSection(intro)}>gabriel</li>
             <li onClick={() => scrollToSection(portfolio)}>portfolio</li>
             <li onClick={() => scrollToSection(about)}>about</li>
-            <li onClick={() => scrollToSection(experience)}>experience</li>
             <li onClick={() => scrollToSection(contact)}>contact</li>
           </ul>
       </nav>
       <section ref={portfolio}><Portfolio /></section>
-      <section ref={about}><AboutMe /></section>
-      <section ref={experience}><Experience /></section>
-      <section ref={contact}><Contact /></section>
+      <section ref={about}><AboutMe /></section>      <section ref={contact}><Contact /></section>
     </>
   )
 }

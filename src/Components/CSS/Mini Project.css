@@ -1,31 +1,30 @@
 /* Mini Project 1 */
 
-.portfolioLinks {
+.portfolioContainer {
     height: auto;
-    background-image: linear-gradient(to right, #151414, #131212, #101010, #0d0d0d, #0a0a0a); border: 0;
-    font-family: 'League Spartan', sans-serif;
+    background-color:#131529;  
+    padding: 5%;
 }
 
-.portfolioLinks header h2 {
+.portfolioContainer header h1 {
     color: white;
-    padding: 2.5em 1em 0;    
+    margin: 1em 0 1em;    
 }
 
 /* Flex Container */
 
 .flexContainer {
-    width: 90vw;
-    margin: auto; 
+    width: 100%;
 }
 
 .miniProject {
-    max-width: 100%;
+    overflow: hidden;
+    width: 100%;
+    padding: 1em;
 }
 
 .miniProjectText {
-    max-width: inherit;
-    margin: 1em;
-    padding: 0.5em;
+    padding: inherit;
 }
   
 .miniProjectText h1 {
@@ -35,15 +34,14 @@
 }
   
 .miniProjectText p {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 500;
     color: rgb(255, 255, 255);
+    text-align: justify;
 }
 
 .miniProjectText2 {
-    max-width: inherit;
-    margin: 1em;
-    padding: 0.5em;
+    padding: inherit;
 }
   
 .miniProjectText2 h1 {
@@ -53,9 +51,10 @@
 }
   
 .miniProjectText2 p {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 500;
     color: rgb(255, 248, 248);
+    text-align: justify;
 }
 
 .miniProjectImg {

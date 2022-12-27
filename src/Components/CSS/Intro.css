@@ -2,8 +2,9 @@
     height: 100vh;
     padding: 5vh 5vw;
     margin: 0;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-    animation: color-change-2x 2s linear infinite alternate both;
+    /* -webkit-animation: color-change-2x 2s linear infinite alternate both;
+    animation: color-change-2x 2s linear infinite alternate both; */
+    background-color: #1674aa;
     display: flex;
     overflow: hidden;
     position: relative;

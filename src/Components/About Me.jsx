@@ -2,6 +2,7 @@ import "./CSS/About.css"
 import Portrait from "./Images/meBlack.jpg"
 import React, { useEffect } from "react";
 import AOS from "aos";
+import Education from "./Education";
 
 function AboutMe() {
 
@@ -24,8 +25,9 @@ function AboutMe() {
             <span>M</span>
             <span>E</span>
         </div>
-            <img className='blackPortrait' src={Portrait} alt='' data-aos="fade-left" />
+        <img className='blackPortrait' src={Portrait} alt='' data-aos="fade-left" />
     </section>
+    <Education />
     </>
 )
 }

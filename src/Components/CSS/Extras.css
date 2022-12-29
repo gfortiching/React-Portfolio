@@ -1,0 +1,65 @@
+.portfolio {
+    display: flex;
+    border: 0;
+    overflow: hidden;
+}
+  
+.one {
+    position: sticky;
+    left: 0%;
+}
+  
+.two {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+  
+.three {
+    position: sticky;
+    bottom: 20%;
+    left: 0%;
+}
+  
+.four {
+    position: sticky;
+    bottom: 0%;
+    left: 0%;
+}
+  
+  
+.five {
+    position: sticky;
+    top: 20%;
+    left: 0%;
+}
+  
+.six {
+    position: sticky;
+    top: 40%;
+    left: 0%;
+}
+  
+article {
+    width: 100vw;
+}
+  
+  
+article p {
+    color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+    font-size: 2em;
+}
+
+.textEnd {
+    text-align: end;
+}
+
+.textStart {
+    text-align: start;
+}
+
+.textCenter {
+    text-align: center;
+}

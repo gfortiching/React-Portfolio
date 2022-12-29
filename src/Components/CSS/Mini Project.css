@@ -1,14 +1,14 @@
-/* Mini Project 1 */
-
 .portfolioContainer {
     height: auto;
-    background-color:#131529;  
+    width: 85vw;
+    background-image: linear-gradient(to right, #1b6d476f, #008583b3, #0079a2ae, #014d7fa1, #45397288);
     padding: 5%;
+    margin: auto;
+    border-radius: 1em;
 }
 
 .portfolioContainer header h1 {
     color: white;
-    margin: 1em 0 1em;    
 }
 
 /* Flex Container */
@@ -29,13 +29,12 @@
   
 .miniProjectText h1 {
     font-size: 2em;
-    color: rgb(96, 176, 96);
+    color: rgb(255, 255, 255);
     font-weight: 700;
 }
   
 .miniProjectText p {
     font-size: 1.2em;
-    font-weight: 500;
     color: rgb(255, 255, 255);
     text-align: justify;
 }
@@ -46,7 +45,7 @@
   
 .miniProjectText2 h1 {
     font-size: 2em;
-    color: rgb(112, 96, 176);
+    color: rgb(255, 255, 255);
     font-weight: 700;
 }
   

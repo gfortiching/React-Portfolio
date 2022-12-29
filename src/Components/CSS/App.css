@@ -1,104 +1,11 @@
-nav.navbar { 
-    position: sticky;
-    height: 0;
-    top: 0%;
-    left: 0%;
-    z-index: 999;
-    background-color: transparent;
+/* Layout */
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    padding: 5%;
     margin: 0;
-    padding: 0;
-}
-
-.navbar li {
-    text-decoration: none;
-    color: white;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    padding: 1em 2em;
-    text-decoration: none;
-    color: white;
-    margin: 0;
-    background-color: transparent;
-}
-
-.navbar li {
-    font-family: 'League Spartan', sans-serif;
-    list-style: none;
-    font-size: 1.1em;
-    font-weight: 700;
-    margin-right: 1.5em;
-    cursor: pointer;
-}
-
-.navbar li:hover {
-    color: rgb(63, 96, 160);
-
-}
-
-aside.linkedIn {
-    background-color: black;
-}
-
-.linkedIn {
-    padding: 0 1em 0;
-    position: sticky;
-    top: 92%;
-    left: 1%;
-    height: 0;
-    background-color: transparent;
-    z-index: 999;
-    float: left;
-}
-
-.linkedIn a {
-    color: white;
-}
-
-.linkedIn i {
-    font-size: 2em;
-}
-
-/* Nav Drawer */
-
-.navDrawer {
-    display: none;
-}
-
-.hideAnchor {
-    display: none;
-}
-
-.dashboardIcon {
-    color: rgb(255, 255, 255);
-    margin: 1em 0 0;
-    padding: 0;
-}
-
-@media all and (max-width: 576px) {
-    .navDrawer {
-        display: flex;
-        position: sticky;
-        float: left;
-        left: 0;
-        top: 0;
-        width: 0;
-        height: 100vh;
-        z-index: 999;        
-        cursor: pointer;
-        font-weight: 700;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .navbar ul {
-        display: none;
-    } 
+    background-color:#121111;
 }
 
 /* Scroll Down */
@@ -109,14 +16,22 @@ aside.linkedIn {
     margin: auto;
     color: rgb(13, 8, 76);
     cursor: pointer;
-  }
+}
 
-  .arrowScrolling {
+.arrowScrolling {
     width: 30px;
     height: 30px;
-  }
+}
 
-  .arrowScrolling:hover {
+.arrowScrolling:hover {
     -webkit-animation: heartbeat 1s ease-in-out infinite both;
     animation: heartbeat 1s ease-in-out infinite both;
-  }
+}
+
+.arvo {
+    font-family: 'Arvo', serif;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}

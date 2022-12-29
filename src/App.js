@@ -1,31 +1,26 @@
-import React from "react";
-import Intro from "./Components/Intro"
-import AboutMe from "./Components/About Me"
-import Portfolio from "./Components/Portfolio"
-import Contact from "./Components/Contact"
-import { useRef } from 'react'
+import React, { useRef } from "react";
+import Intro from "./Components/Intro";
+import About from "./Components/About";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
 
-import "./Components/CSS/App.css"
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import "./Components/CSS/App.css";
+import "./Components/CSS/Nav.css";
 
-import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
+import { Box } from "@mui/system";
 import DashboardIcon from '@mui/icons-material/Dashboard';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+import Scroll from "./Functions/Scroll";
 
 function App() {
 
   const intro = useRef(null);
   const about = useRef(null);
   const contact = useRef(null);
-  const portfolio = useRef(null);
-  const scrollToSection = (elementRef) => {
-      window.scrollTo({
-          top: elementRef.current.offsetTop,
-          behavior: "smooth",
-      });
-  };
+  const projects = useRef(null);
 
   const [state, setState] = React.useState({
     top: false,
@@ -34,11 +29,11 @@ function App() {
     right: false,
   });
 
-  const toggleDrawer = (anchor, open) => (event) => {
+  const ToggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
-    }
-
+  }
+  
     setState({ ...state, [anchor]: open });
   };
 
@@ -46,14 +41,14 @@ function App() {
     <Box
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
+      onClick={ToggleDrawer(anchor, false)}
+      onKeyDown={ToggleDrawer(anchor, false)}
     >
-        <ul>
-          <li onClick={() => scrollToSection(intro)}>gabriel</li>
-          <li onClick={() => scrollToSection(portfolio)}>portfolio</li>
-          <li onClick={() => scrollToSection(about)}>about</li>
-          <li onClick={() => scrollToSection(contact)}>contact</li>
+        <ul className="drawer-ul">
+          <li className="arvo" onClick={() => Scroll(intro)}>gabriel</li>
+          <li className="lato" onClick={() => Scroll(projects)}>projects</li>
+          <li className="lato" onClick={() => Scroll(about)}>about</li>
+          <li className="lato" onClick={() => Scroll(contact)}>contact</li>
         </ul>
     </Box>
   );
@@ -67,14 +62,14 @@ function App() {
       <div className="navDrawer">
           {['left'].map((anchor) => (
           <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>
+          <Button onClick={ToggleDrawer(anchor, true)}>
               <span className="hideAnchor">{anchor}</span>
               <span className="dashboardIcon"><DashboardIcon /></span>
           </Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
+            onClose={ToggleDrawer(anchor, false)}
           >
             {list(anchor)}
           </Drawer>
@@ -82,15 +77,18 @@ function App() {
           ))}
       </div>
       <nav className="navbar">
+        <div className="navContainer">
           <ul>
-            <li onClick={() => scrollToSection(intro)}>gabriel</li>
-            <li onClick={() => scrollToSection(portfolio)}>portfolio</li>
-            <li onClick={() => scrollToSection(about)}>about</li>
-            <li onClick={() => scrollToSection(contact)}>contact</li>
+            <li className="arvo me-5" onClick={() => Scroll(intro)}>gabriel</li>
+            <li className="lato" onClick={() => Scroll(projects)}>projects</li>
+            <li className="lato" onClick={() => Scroll(about)}>about</li>
+            <li className="lato" onClick={() => Scroll(contact)}>contact</li>
           </ul>
+        </div>
       </nav>
-      <section ref={portfolio}><Portfolio /></section>
-      <section ref={about}><AboutMe /></section>      <section ref={contact}><Contact /></section>
+      <section ref={projects}><Projects /></section>
+      <section ref={about}><About /></section>
+      <section ref={contact}><Contact /></section>
     </>
   )
 }

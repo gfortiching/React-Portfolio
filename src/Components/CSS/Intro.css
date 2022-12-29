@@ -1,10 +1,6 @@
 .introMain {
-    height: 100vh;
-    padding: 5vh 5vw;
-    margin: 0;
-    /* -webkit-animation: color-change-2x 2s linear infinite alternate both;
-    animation: color-change-2x 2s linear infinite alternate both; */
-    background-color: #1674aa;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+    animation: color-change-2x 2s linear infinite alternate both;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -51,7 +47,7 @@
   top: 2%;
   display: flex;
   justify-content: center;
-  animation: move-rtl 12s linear infinite;
+  animation: move-rtl 13s linear infinite;
 }
 
 .skills h1 {
@@ -86,12 +82,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'League Spartan', sans-serif;
     width: inherit;
 }
 
 .greet {
-    font-size: 2.8em;
+    font-size: 2.5em;
     font-weight: 300;
 }
 
@@ -107,20 +102,20 @@
 
 .getToKnow {
   left: 10%;
-  bottom: 12%;
+  bottom: 15%;
   position: absolute;
   background-color: transparent;
   /* -webkit-animation: vibrate-1 0.3s linear infinite both;
   animation: vibrate-1 0.3s linear infinite both; */
-  font-family: 'League Spartan', sans-serif;
   cursor: pointer;
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 700;
   border: 4px solid #ffffff;
-  padding: 0.2rem 0.8rem;
+  padding: 0.5% 1%;
   border-radius: 0.25em;
   width: 250px;
+  white-space: nowrap;
   text-shadow: 0 0 0.125em rgb(15, 24, 101), 0 0 0.45em #ffffff;
   box-shadow: inset 0 0 0.5em #ffffff, 0 0 0.5em 0 #ffffff;
 }

@@ -6,7 +6,7 @@ export default function Contact() {
     <>
     <section className="main">
         <div>
-            <h1>Contact</h1>
+            <h1 className="arvo">Contact</h1>
         </div>
     </section>
     </>

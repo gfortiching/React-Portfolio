@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Intro from "./Components/Intro";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
+import Switch from "./Functions/Switch";
 
 import "./Components/CSS/App.css";
 import "./Components/CSS/Nav.css";
@@ -53,8 +54,10 @@ function App() {
     </Box>
   );
 
+  const [darkMode, setDarkMode] = useState(true);  
+
   return (
-    <>
+    <main className={ darkMode ? 'dark-mode' : 'light-mode'}>
       <section ref={intro}><Intro /></section>
       <aside className="linkedIn">
           <a href="https://www.linkedin.com/in/gabrielfabilena/" target="blank"><LinkedInIcon sx={{fontSize: "2em"}}/></a>
@@ -83,13 +86,14 @@ function App() {
             <li className="lato" onClick={() => Scroll(projects)}>projects</li>
             <li className="lato" onClick={() => Scroll(about)}>about</li>
             <li className="lato" onClick={() => Scroll(contact)}>contact</li>
+            <li style={{marginLeft: "auto"}}><Switch rounded={false} onToggle={() => setDarkMode(!darkMode)}/></li>
           </ul>
         </div>
       </nav>
       <section ref={projects}><Projects /></section>
       <section ref={about}><About /></section>
       <section ref={contact}><Contact /></section>
-    </>
+    </main>
   )
 }
 

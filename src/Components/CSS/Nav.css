@@ -11,7 +11,6 @@ nav.navbar {
 
 .navContainer {
     width: 100vw;
-    background-color: #121111;
 }
 
 nav.navbar.active {
@@ -25,7 +24,7 @@ nav.navbar.active {
     flex-direction: row;
     padding: 1em 2em;
     text-decoration: none;
-    color: white;
+    /* color: white; */
     margin: 0;
     background-color: transparent;
 }
@@ -60,12 +59,14 @@ aside.linkedIn {
     float: left;
 }
 
-.linkedIn a {
-    color: white;
-}
+/* s */
 
 .linkedIn i {
     font-size: 2em;
+}
+
+.linkedIn a {
+    color: inherit;
 }
 
 /* Nav Drawer */

@@ -5,7 +5,16 @@
     width: 100%;
     padding: 5%;
     margin: 0;
-    background-color:#121111;
+}
+
+.dark-mode {
+    background-color:#252438;
+    color: white;
+}
+
+.light-mode {
+    background-color: rgb(251, 255, 240);
+    color: black;
 }
 
 /* Scroll Down */
@@ -14,7 +23,6 @@
     position: absolute;
     bottom: 5%;
     margin: auto;
-    color: rgb(13, 8, 76);
     cursor: pointer;
 }
 

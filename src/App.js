@@ -3,18 +3,15 @@ import Intro from "./Components/Intro";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
-import Switch from "./Functions/Switch";
-
-import "./Components/CSS/App.css";
-import "./Components/CSS/Nav.css";
-
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import { Box } from "@mui/system";
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
+import GitHubIcon from '@mui/icons-material/GitHub';
 import Scroll from "./Functions/Scroll";
+import Switch from "./Functions/Switch";
+import "./Components/CSS/App.css";
 
 function App() {
 
@@ -40,16 +37,23 @@ function App() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 200 }}
       role="presentation"
       onClick={ToggleDrawer(anchor, false)}
       onKeyDown={ToggleDrawer(anchor, false)}
+      className={ darkMode ? 'navDrawerDark' : 'navDrawerLight'}
+      style={{height: "100vh"}}
     >
         <ul className="drawer-ul">
-          <li className="arvo" onClick={() => Scroll(intro)}>gabriel</li>
+          <li className="arvo me-5" onClick={() => Scroll(intro)}>gabriel</li>
           <li className="lato" onClick={() => Scroll(projects)}>projects</li>
           <li className="lato" onClick={() => Scroll(about)}>about</li>
           <li className="lato" onClick={() => Scroll(contact)}>contact</li>
+          <li>
+            <img id="sun" className={darkMode ? 'on' : 'off'   } src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt=""/>
+            <Switch rounded={false} onToggle={() => setDarkMode(!darkMode)}/>
+            <img id="moon" className={darkMode ? 'off' : 'on'   } src="https://cdn-icons-png.flaticon.com/512/581/581601.png" alt=""/>
+          </li>
         </ul>
     </Box>
   );
@@ -59,15 +63,12 @@ function App() {
   return (
     <main className={ darkMode ? 'dark-mode' : 'light-mode'}>
       <section ref={intro}><Intro /></section>
-      <aside className="linkedIn">
-          <a href="https://www.linkedin.com/in/gabrielfabilena/" target="blank"><LinkedInIcon sx={{fontSize: "2em"}}/></a>
-      </aside>
-      <div className="navDrawer">
+      <aside id="navDrawer">
           {['left'].map((anchor) => (
-          <React.Fragment key={anchor}>
+          <React.Fragment key={anchor} >
           <Button onClick={ToggleDrawer(anchor, true)}>
               <span className="hideAnchor">{anchor}</span>
-              <span className="dashboardIcon"><DashboardIcon /></span>
+              <span className="dashboardIcon"><DashboardIcon className={darkMode ? 'dashWhite' : 'dashBlack'} /></span>
           </Button>
           <Drawer
             anchor={anchor}
@@ -78,18 +79,30 @@ function App() {
           </Drawer>
         </React.Fragment>
           ))}
-      </div>
+      </aside>
       <nav className="navbar">
         <div className="navContainer">
-          <ul>
+          <ul className={darkMode ? 'navDark' : 'navLight'}>
             <li className="arvo me-5" onClick={() => Scroll(intro)}>gabriel</li>
             <li className="lato" onClick={() => Scroll(projects)}>projects</li>
             <li className="lato" onClick={() => Scroll(about)}>about</li>
             <li className="lato" onClick={() => Scroll(contact)}>contact</li>
-            <li style={{marginLeft: "auto"}}><Switch rounded={false} onToggle={() => setDarkMode(!darkMode)}/></li>
+            <li style={{marginLeft: "auto", marginRight: "0"}}>
+
+            <Switch rounded={false} onToggle={() => setDarkMode(!darkMode)}/>
+            <img id="moon" className={darkMode ? 'off' : 'on'   } src="https://cdn-icons-png.flaticon.com/512/581/581601.png" alt=""/>
+            <img id="sun" className={darkMode ? 'on' : 'off'   } src="https://cdn-icons-png.flaticon.com/512/979/979585.png" alt=""/>
+
+            </li>
           </ul>
         </div>
       </nav>
+      <aside className="linkedIn">
+          <a href="https://www.linkedin.com/in/gabrielfabilena/" target="blank"><LinkedInIcon sx={{fontSize: "2em"}}/></a>
+      </aside>
+      <aside className="github">
+          <a href="https://github.com/gfortiching" target="blank"><GitHubIcon sx={{fontSize: "2em"}}/></a>
+      </aside>
       <section ref={projects}><Projects /></section>
       <section ref={about}><About /></section>
       <section ref={contact}><Contact /></section>

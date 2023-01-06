@@ -13,10 +13,6 @@ nav.navbar {
     width: 100vw;
 }
 
-nav.navbar.active {
-    background-color: blue;
-}
-
 .navbar ul {
     display: flex;
     justify-content: flex-start;
@@ -24,9 +20,15 @@ nav.navbar.active {
     flex-direction: row;
     padding: 1em 2em;
     text-decoration: none;
-    /* color: white; */
     margin: 0;
-    background-color: transparent;
+}
+
+.navDark {
+    background-color:#20252d94;
+}
+
+.navLight {
+    background-color: rgba(100, 120, 150, 0.681);
 }
 
 .navbar li {
@@ -36,53 +38,58 @@ nav.navbar.active {
     margin-right: 1.5em;
     cursor: pointer;
     letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    white-space: nowrap;
 }
 
 .navbar li:hover {
-    color: rgb(63, 96, 160);
+    color: rgb(99, 117, 155);
     transition: all 0.3s ease-out;
-
 }
 
-aside.linkedIn {
-    background-color: black;
+.navbar img {
+    width: 18px;
+    object-fit: contain ;
 }
 
-.linkedIn {
-    padding: 0 1em 0;
-    position: sticky;
-    top: 92%;
-    left: 1%;
-    height: 0;
-    background-color: transparent;
-    z-index: 999;
-    float: left;
-}
-
-/* s */
-
-.linkedIn i {
-    font-size: 2em;
-}
-
-.linkedIn a {
-    color: inherit;
+#sun, #moon {
+    width: 25px;
 }
 
 /* Nav Drawer */
 
-.navDrawer {
+#navDrawer {
     display: none;
 }
 
+.drawer-ul img {
+    width: 20px;
+}
+
 .drawer-ul {
-    margin: 1em 0;
+    padding: 10%;
+    margin: 0 auto;
+    height: 100vh;
 }
 
 .drawer-ul li {
     list-style: none;
     padding: 0.5em 0;
-    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    white-space: nowrap;
+}
+
+.drawer-ul li:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    white-space: nowrap;
+    margin-top: 100%;
 }
 
 .hideAnchor {
@@ -90,13 +97,20 @@ aside.linkedIn {
 }
 
 .dashboardIcon {
-    color: rgb(255, 255, 255);
     margin: 1em 0 0;
     padding: 0;
 }
 
-@media all and (max-width: 576px) {
-    .navDrawer {
+.dashBlack {
+    color: black;
+}
+
+.dashWhite {
+    color: rgb(233, 189, 189);
+}
+
+@media all and (max-width: 768px) {
+    #navDrawer {
         display: flex;
         position: sticky;
         float: left;
@@ -110,9 +124,28 @@ aside.linkedIn {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        background-color: inherit;
     }
 
     .navbar ul {
         display: none;
     } 
+}
+
+.on {
+    display: none;
+}
+
+.off {
+    text-shadow: 0;
+}
+
+.navDrawerDark {
+    background-color: #050F25;
+    color: white;
+}
+
+.navDrawerLight {
+    background-color: rgb(192, 206, 225);
+    color: black;
 }

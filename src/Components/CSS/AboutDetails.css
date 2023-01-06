@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.detailsContainer { 
+    height: auto;
+    width: 100%;
+    border: 0;
+    padding: 5%;
+}
+
+/* Header */
+
+.header {
+  min-height: 100vh;
+  width: 85vw;
+  margin: auto;
+}
+
+.header h1 {
+  text-align: center;
+  position: sticky;
+  top: 15%;
+  bottom: 20%;
+  margin: 5vh 0 20vh;
+  padding: 5%;
+  font-size: 5vw;
+}
+
+header.details h2 span {
+  white-space: nowrap;
+}
+
+.header span h3 {
+  text-align: justify;
+} 
+
+/* Details */
+
+.details {
+  min-height: 100vh;
+  width: 85vw;
+  margin: 5% auto;
+  padding: 3%;
+  border-radius: 1em;
+}
+
+.details h2 {
+  position: sticky;
+  top: 15%;
+  bottom: 10%;
+  text-transform: uppercase;
+  margin: 1em auto;
+  font-weight: 700;
+}
+
+.details:nth-of-type(1) {
+  background-image: linear-gradient(to right, #263f618e, #6d91c39b);}
+
+.details:nth-of-type(2) {
+  background-image: linear-gradient(to right, #263f618e, #8aba90a7);}
+
+.details:nth-of-type(3) {
+  background-image: linear-gradient(to right, #263f618e, #6d91c39b);}
+
+.details:nth-of-type(4) {
+  background-image: linear-gradient(to right, #263f618e, #8aba90a7);}
+
+.details:nth-of-type(5) {
+  background-image: linear-gradient(to right, #263f618e, #6d91c39b);}
+
+
+.text {
+  height: auto;
+  width: 70%;
+  object-fit: contain;
+  margin-left: auto;
+  margin-bottom: 5%;
+  /* border: 2px solid rgb(255, 255, 255); */
+  padding: 5%;
+  border-radius: 1em;
+}
+
+.details:nth-of-type(1) .summary, .details:nth-of-type(2) .summary, .details:nth-of-type(3) .summary {
+  background-color: transparent;
+}
+
+.details:nth-of-type(1) .summary h4, .details:nth-of-type(2) .summary h4, .details:nth-of-type(3) .summary h4 {
+  font-weight: 800;
+}
+
+/* Details Course (4) */
+
+
+.details:nth-of-type(4) .summary {
+  min-height: 100vh;
+  width: 80%;
+  margin-left: auto;
+  padding: 5%;
+}
+
+.details:nth-of-type(4) .box img {
+  display: block;
+  width: 150px;
+  aspect-ratio: 2/1;
+  height: auto;
+  object-fit: contain;
+  padding: 2%;
+  background-color: transparent;
+  border-radius: 1em;
+}
+
+.details:nth-of-type(4) .box span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid rgb(255, 255, 255); */
+  padding: 2% 3%;
+  margin: 5% 0;
+  border-radius: 1em;
+  background-color: transparent;
+}
+
+/* Details Skills (5) */
+
+
+.details:nth-of-type(5) .summary {
+  min-height: 100vh;
+  width: 80%;
+  margin-left: auto;
+  padding: 5%;
+}
+
+.details:nth-of-type(5) .box img {
+  display: block;
+  width: 120px;
+  aspect-ratio: 2/1;
+  height: auto;
+  object-fit: contain;
+  padding: 2%;
+  border-radius: 1em;
+}
+
+.details:nth-of-type(5) .box span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  /* border: 2px solid rgb(255, 255, 255); */
+  padding: 2% 5%;
+  margin: 1% 0;
+  border-radius: 1em;
+  background-color: transparent;
+}
+
+.details:nth-of-type(5) .box span img {
+  padding: 1% 0;
+}
+
+/* Box */
+
+.box {
+  height: auto;
+  width: auto;
+  margin-left: auto;
+}
+
+.box span a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Text Area */
+
+.text p {
+  font-size: 1em;
+  font-weight: 700;
+  color: inherit;
+  text-align: justify;
+}
+
+@media all and (min-width: 769px) and (max-width: 1200px) {
+  .text {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  .header h1 {
+    font-size: 2.5em;
+  }
+
+  .details h2 {
+    position: static;
+  }
+
+  .details:nth-of-type(4) .summary, .details:nth-of-type(5) .summary {
+    min-height: 100vh;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .text {
+    height: auto;
+    width: auto;
+    border: 2px solid white;
+  }
+
+  .courses {
+    width: auto;
+    padding: 0;
+  }
+
+  .box span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .details:nth-of-type(4) .box img, .details:nth-of-type(5) .box img {
+    width: 120px;
+  }
+}
+
+@media all and (max-width: 576px) {
+
+  .details h2 {
+    position: static;
+    text-align: center;
+  }
+
+  .details:nth-of-type(4) .box span, .details:nth-of-type(5) .box span {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box span h4 {
+    text-align: center;
+  }
+}

@@ -2,7 +2,7 @@
     height: auto;
     width: 85vw;
     background-image: linear-gradient(to right, #30835c6f, #30835c6f, #45397288, #45397288);
-    padding: 5%;
+    padding: 3%;
     margin: auto;
     border-radius: 1em;
 }
@@ -23,23 +23,14 @@
     padding: inherit;
 }
   
-.miniProjectText h1 {
-    font-size: 2em;
-    font-weight: 700;
-}
-  
 .miniProjectText p {
     font-size: 1.2em;
+    font-weight: 500;
     text-align: justify;
 }
 
 .miniProjectText2 {
     padding: inherit;
-}
-  
-.miniProjectText2 h1 {
-    font-size: 2em;
-    font-weight: 700;
 }
   
 .miniProjectText2 p {
@@ -49,25 +40,26 @@
 }
 
 .miniProjectImg {
-    margin: 1em;
+    margin: auto;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.miniProjectImg a {
+    margin: auto;
 }
   
 .miniProjectImg img {
     object-fit: cover;
-    border: 2px solid rgb(118, 120, 118);
-    padding: 0.3em;
+    border: 2px solid rgb(201, 201, 201);
+    padding: 1%;
     width: 100%;
     max-width: 600px;
     height: 100%;
 }
 
 .miniProjectImg img:hover {
-    object-fit: cover;
     border: 2px solid rgba(26, 27, 26, 0);;
     background-color: rgb(208, 200, 185);
-    padding: 0.3em;
-    width: 100%;
-    max-width: 600px;
-    height: 100%;
 }

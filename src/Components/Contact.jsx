@@ -5,8 +5,9 @@ export default function Contact() {
     return (
     <>
     <section className="main">
-        <div>
-            <h1 className="arvo">Contact</h1>
+        <h1 className="arvo text-center text-sm-start mb-5 mt-2'">Contact</h1>
+        <div className="contactContainer">
+
         </div>
     </section>
     </>

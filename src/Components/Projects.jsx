@@ -35,7 +35,7 @@ function Projects() {
     <section className="main" ref={mp1}>
     <header data-aos="fade-right"><h1 className='arvo text-center text-sm-start mb-5'>Projects</h1></header>
       <div className='portfolioContainer'>
-      <header data-aos="fade-right"><h2 className='arvo text-center text-sm-start mb-5'>KodeGo Mini Projects</h2></header>
+      <header data-aos="fade-right"><h2 className='arvo text-center text-sm-start mt-3 mb-3'>KodeGo Mini Projects</h2></header>
         <div className='flexContainer d-flex justify-content-center flex-column flex-md-row' data-aos="zoom-in">
           <article className="miniProject">
               <div className="miniProjectImg">

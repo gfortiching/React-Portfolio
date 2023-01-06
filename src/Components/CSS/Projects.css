@@ -1,3 +1,6 @@
+@import "Mini Project.css";
+@import "Extras.css";
+
 .portfolioBg {
   display: flex;
   justify-content: center;
@@ -10,7 +13,6 @@
   display: flex;
   width: 100vw;
   justify-content: center;
-  backdrop-filter: blur(5px);
   margin: auto 0 20vh;
   z-index: 1;
 }
@@ -24,6 +26,7 @@
   padding: 0.5em 0.5em;
   text-transform: uppercase;
   word-spacing: 10px;
+  font-weight: 700;
 }
 
 /* KodeGo Image */

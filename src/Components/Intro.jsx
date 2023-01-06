@@ -13,7 +13,7 @@ function Intro() {
 
     return (
     <>
-    <main className="introMain main">
+    <main className="introMain">
     <Skills />
     <section className="intro">
         <div className="left">
@@ -24,7 +24,6 @@ function Intro() {
                 <span><h1 className="name arvo">I'm Gabriel and I'm a Full-Stack Web Developer.</h1></span>
             </div>
         </div>
-
         <div className="right">
             <img src={Me} alt="" className="myImg" />
         </div>

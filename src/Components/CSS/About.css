@@ -1,6 +1,8 @@
+@import "AboutDetails.css";
+
 /* About Me */
 
-.aboutMe {
+.aboutContainer {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -8,10 +10,11 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    background-color:#070707;
 }
 
 .blackPortrait {
-    height: 90vh;
+    height: 80vh;
     max-width: 90vw;
     margin-left: auto;
     margin-right: 5%;
@@ -126,6 +129,8 @@
   text-transform: uppercase;
   animation: waviy 1s infinite;
   animation-delay: 0.1s;
+  color: white;
+  font-weight: 800;
 }
 
 @keyframes waviy {
@@ -145,6 +150,13 @@
       left: auto;
       right: auto;
       font-size: 40px;
+    }
+
+    .blackPortrait {
+        height: 90vh;
+        width: 100%;
+        object-fit: cover;
+        margin: 0;
     }
 
     @keyframes move {

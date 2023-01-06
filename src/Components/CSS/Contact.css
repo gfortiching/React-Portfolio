@@ -1,0 +1,8 @@
+.contactContainer {
+    min-height: 65vh;
+    width: 85vw;
+    margin: 2% auto;
+    padding: 3%;
+    border-radius: 1em;
+    background-color: azure;
+}

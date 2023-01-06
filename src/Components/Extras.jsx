@@ -1,5 +1,3 @@
-import "./CSS/Extras.css"
-
 function Extras() {
 
     return (

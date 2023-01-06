@@ -5,7 +5,7 @@ import React from "react";
 import "./CSS/Projects.css";
 import "./CSS/Mini Project.css"
 import RootsAndTools from "./Images/MP1.PNG"
-import LittleWizards from "./Images/MP2.PNG"
+import LittleWizards from "./Images/MP2.png"
 import Kodego from "./Images/KodeGo.png"
 import Arrow from "./Images/arrow.png";
 import Extras from './Extras';

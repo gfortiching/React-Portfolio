@@ -22,11 +22,11 @@ function AboutDetails() {
             <h3 className="arvo mt-5" data-aos="fade-right">I am excited learn new technologies, develop my skills and gather experience while working with a team of experts and professionals.</h3>
           </span>
           <span>
-            <h3 className="arvo mt-5" data-aos="fade-right">My daily target is to become a better Web Developer and to contribute to any company that I work for.</h3>
+            <h3 className="arvo mt-5" data-aos="fade-right">My daily target is to become a better Web Developer and to learn new things.</h3>
           </span>
         </h1>
       </header>
-
+      <hr className="hr" />
       <article className="details">
         <h2 className="arvo" data-aos="fade-right">Education</h2>
         <div className="text summary" data-aos="fade-up">
@@ -48,7 +48,7 @@ function AboutDetails() {
           <p className="lato">June 2015 - March 2020 </p>
         </div>
       </article>
-
+      <hr className="hr" />
       <article className="details">
         <h2 className="arvo" data-aos="fade-right">Work<br />Experiences</h2>
         <div className="text summary" data-aos="fade-up">
@@ -66,7 +66,7 @@ function AboutDetails() {
           <p className="lato">August 2020 - December 2022 </p>
         </div>
       </article>
-
+      <hr className="hr" />
       <article className="details">
         <h2 className="arvo" data-aos="fade-right">Bootcamps</h2>
         <div className="text summary" data-aos="fade-up">
@@ -76,7 +76,7 @@ function AboutDetails() {
           <p className="lato">September 30 2022 - Present </p>
         </div>
       </article>
-
+      <hr className="hr" />
       <article className="details">
         <h2 className="arvo" data-aos="fade-right">Courses</h2>
         <div className="summary">
@@ -114,7 +114,7 @@ function AboutDetails() {
           </div>
         </div>
       </article>
-
+      <hr className="hr" />
       <article className="details">
         <h2 className="arvo" data-aos="fade-right">Technical <br />Skills</h2>
         <div className="summary">

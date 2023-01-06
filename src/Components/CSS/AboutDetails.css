@@ -15,9 +15,9 @@
 
 .header {
   min-height: 100vh;
-  width: 80vw;
+  width: 90vw;
   margin: auto;
-  background-color: rgba(200, 194, 255, 0.1);
+  background-color: rgba(146, 159, 224, 0.25);
   border-radius: 1em;
 }
 
@@ -26,7 +26,7 @@
   position: sticky;
   top: 15%;
   bottom: 20%;
-  margin: 5vh 0 20vh;
+  margin: 5vh 0;
   padding: 5%;
   font-size: 5vw;
 }
@@ -44,8 +44,8 @@ header.details h2 span {
 
 .details {
   min-height: 100vh;
-  width: 80vw;
-  margin: 5% auto;
+  width: 90vw;
+  margin: 10% auto;
   padding: 3%;
   border-radius: 1em;
 }
@@ -244,4 +244,12 @@ header.details h2 span {
   .box span h4 {
     text-align: center;
   }
+}
+
+.hr {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: white;
 }

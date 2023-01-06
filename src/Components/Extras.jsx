@@ -4,7 +4,7 @@ function Extras() {
         <>
         <section className="main portfolio align-items-end justify-content-start">
           <article className='one' data-aos="fade-right">
-              <p className="lato textStart">Is anyone still there?</p>
+              <p className="lato textStart">Are you still there?</p>
           </article>
         </section>
         <section className="main portfolio align-items-end justify-content-end">
@@ -12,10 +12,12 @@ function Extras() {
               <p className="lato textCenter">Oh, hello!</p>
           </article>
         </section>
-        <section className="main portfolio align-items-end justify-content-center">
+        <section className="main portfolio align-items-center justify-content-center">
           <article className='three' data-aos="fade-right">
-              <p className="lato textStart">So, I hope you liked my projects.</p>
+              <p className="lato textStart">I hope you liked my projects.</p>
           </article>
+        </section>
+        <section className="main portfolio align-items-center justify-content-center">
           <article className='four' data-aos="fade-left">
               <p className="lato textEnd">You might be curious about me.</p>
           </article>
@@ -24,6 +26,8 @@ function Extras() {
           <article className='five' data-aos="fade-right">
               <p className="lato textStart">Well, I'm just a normal person...</p>
           </article>
+        </section>
+        <section className="main portfolio align-items-start justify-content-center">
           <article className='six' data-aos="fade-left">
               <p className="lato textEnd">...learning to become a good web developer.</p>
           </article>

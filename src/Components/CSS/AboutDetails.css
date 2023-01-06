@@ -15,8 +15,10 @@
 
 .header {
   min-height: 100vh;
-  width: 85vw;
+  width: 80vw;
   margin: auto;
+  background-color: rgba(200, 194, 255, 0.1);
+  border-radius: 1em;
 }
 
 .header h1 {
@@ -35,13 +37,14 @@ header.details h2 span {
 
 .header span h3 {
   text-align: justify;
+  line-height: 1.5em;
 } 
 
 /* Details */
 
 .details {
   min-height: 100vh;
-  width: 85vw;
+  width: 80vw;
   margin: 5% auto;
   padding: 3%;
   border-radius: 1em;
@@ -195,6 +198,7 @@ header.details h2 span {
 
   .details h2 {
     position: static;
+    margin: 2em 1em;
   }
 
   .details:nth-of-type(4) .summary, .details:nth-of-type(5) .summary {
@@ -206,7 +210,6 @@ header.details h2 span {
   .text {
     height: auto;
     width: auto;
-    border: 2px solid white;
   }
 
   .courses {

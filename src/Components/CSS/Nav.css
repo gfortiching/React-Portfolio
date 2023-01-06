@@ -1,6 +1,5 @@
 nav.navbar { 
     position: sticky;
-    height: 0;
     width: 100%;
     top: 0%;
     left: 0%;
@@ -13,22 +12,27 @@ nav.navbar {
     width: 100vw;
 }
 
-.navbar ul {
+.navDark {
+    background-color:#20252d94;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    padding: 1em 2em;
     text-decoration: none;
     margin: 0;
-}
-
-.navDark {
-    background-color:#20252d94;
+    padding: 1em 2em;
 }
 
 .navLight {
     background-color: rgba(100, 120, 150, 0.681);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    margin: 0;
+    padding: 1em 2em;
+    height: 0;
 }
 
 .navbar li {
@@ -106,7 +110,7 @@ nav.navbar {
 }
 
 .dashWhite {
-    color: rgb(233, 189, 189);
+    color: rgb(255, 255, 255);
 }
 
 @media all and (max-width: 768px) {

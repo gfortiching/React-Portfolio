@@ -35,7 +35,7 @@
 
 .keepScrolling {
     position: absolute;
-    bottom: 5%;
+    bottom: 20%;
     margin: auto;
     cursor: pointer;
 }
@@ -52,48 +52,23 @@
 
 /* Sticky Icons */
 
-aside.linkedIn {
-    background-color: black;
-}
-
-.linkedIn {
+.links {
     padding: 0 1em 0;
     position: sticky;
-    top: 92%;
-    left: 1%;
-    height: 0;
+    top: 85%;
+    left: 0.5%;
+    height: 0%;
+    width: 0%;
     background-color: transparent;
     z-index: 999;
     float: left;
+    gap: 0.8em;
 }
 
-.linkedIn i {
+.links i {
     font-size: 2em;
 }
 
-.linkedIn a {
-    color: inherit;
-}
-
-aside.github {
-    background-color: black;
-}
-
-.github {
-    padding: 0 1em 0;
-    position: sticky;
-    top: 86%;
-    left: 1%;
-    height: 0;
-    background-color: transparent;
-    z-index: 999;
-    float: left;
-}
-
-.github i {
-    font-size: 2em;
-}
-
-.github a {
+.links a {
     color: inherit;
 }

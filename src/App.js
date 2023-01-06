@@ -7,11 +7,10 @@ import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import { Box } from "@mui/system";
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import Scroll from "./Functions/Scroll";
 import Switch from "./Functions/Switch";
 import "./Components/CSS/App.css";
+import AsideLinks from './Components/AsideLinks';
 
 function App() {
 
@@ -97,12 +96,7 @@ function App() {
           </ul>
         </div>
       </nav>
-      <aside className="linkedIn">
-          <a href="https://www.linkedin.com/in/gabrielfabilena/" target="blank"><LinkedInIcon sx={{fontSize: "2em"}}/></a>
-      </aside>
-      <aside className="github">
-          <a href="https://github.com/gfortiching" target="blank"><GitHubIcon sx={{fontSize: "2em"}}/></a>
-      </aside>
+      <AsideLinks />
       <section ref={projects}><Projects /></section>
       <section ref={about}><About /></section>
       <section ref={contact}><Contact /></section>

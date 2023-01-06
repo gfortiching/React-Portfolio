@@ -10,7 +10,7 @@ import Kodego from "./Images/KodeGo.png"
 import Arrow from "./Images/arrow.png";
 import Extras from './Extras';
 import Scroll from '../Functions/Scroll';
-import AnimateScroll from "../Functions/AnimateScroll";  
+import AnimateScroll from "../Functions/AnimateScroll";
 
 function Projects() {
 
@@ -20,7 +20,7 @@ function Projects() {
 
     return (
     <>
-    <section className="portfolioBg main">
+    <main className="portfolioBg main">
     <div className='kodego'><img src={Kodego} alt="" /></div>
       <article className="checkOut">
           <div data-aos="fade-right">
@@ -30,12 +30,14 @@ function Projects() {
       <div className="keepScrolling" onClick={() => Scroll(mp1)}>
           <img src={Arrow} alt="" className='arrowScrolling'/>
       </div>
-    </section>
+    </main>
 
     <section className="main" ref={mp1}>
-    <header data-aos="fade-right"><h1 className='arvo text-center text-sm-start mb-5'>Projects</h1></header>
+    <header data-aos="fade-right"><h1 className='arvo text-center text-sm-start mt-5 mb-5'>Projects</h1></header>
       <div className='portfolioContainer'>
-      <header data-aos="fade-right"><h2 className='arvo text-center text-sm-start mt-3 mb-3'>KodeGo Mini Projects</h2></header>
+        <div data-aos="fade-right">
+          <h1 className='arvo text-center text-sm-start mt-4 mb-4'>KodeGo Mini Projects</h1>
+        </div>
         <div className='flexContainer d-flex justify-content-center flex-column flex-md-row' data-aos="zoom-in">
           <article className="miniProject">
               <div className="miniProjectImg">
@@ -44,7 +46,7 @@ function Projects() {
                 </a>
               </div>
               <div className="miniProjectText">
-                <h4 className='mb-4 lato'>Mini Project 1</h4>
+                <h2 className='mb-4 lato'>Mini Project 1</h2>
                 <h1 className='mb-3 arvo'>Roots and Tools Essentials</h1>
                 <p>Roots and Tools Essentials was built using HTML, CSS and Bootstrap. My inspiration for this project and niche is my hobby for succulents.</p>
               </div>
@@ -56,7 +58,7 @@ function Projects() {
                 </a>
               </div>
               <div className="miniProjectText2">
-                <h4 className='mb-4 lato'>Mini Project 2</h4>
+                <h2 className='mb-4 lato'>Mini Project 2</h2>
                 <h1 className='mb-3 arvo'>Little Wizards</h1>
                 <p>Little Wizards was built using HTML, CSS, Bootstrap and JavaScript. Our goal for this KodeGo Project is to create an eLearning website using HTML, CSS, Bootstrap and JavaScript.</p>
               </div>

@@ -2,8 +2,6 @@ import { useRef } from 'react';
 import React from "react";
 import Portrait from "./Images/meBlack.jpg"
 import AboutDetails from "./AboutDetails";
-import Arrow from "./Images/arrow.png";
-import Scroll from '../Functions/Scroll';
 import "../Functions/AnimateScroll";
 import "./CSS/About.css"
 
@@ -13,7 +11,7 @@ function AboutMe() {
 
     return (
     <>
-    <section className="aboutContainer">
+    <main className="aboutContainer">
         <div className="waviy " data-aos="fade-right">
             <span className="arvo">A</span>
             <span className="arvo">B</span>
@@ -25,10 +23,7 @@ function AboutMe() {
             <span className="arvo">E</span>
         </div>
         <img className='blackPortrait' src={Portrait} alt='' data-aos="fade-left" />
-        <div className="keepScrolling" onClick={() => Scroll(details)}>
-          <img src={Arrow} alt="" className='arrowScrolling'/>
-      </div>
-    </section>
+    </main>
     <section ref={details}><AboutDetails /></section>
     </>
 )

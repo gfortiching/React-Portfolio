@@ -2,6 +2,7 @@
 @import "Extras.css";
 
 .portfolioBg {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +35,7 @@
 .kodego {
   position: absolute;
   z-index: 0;
-  top: 15%;
+  top: 10%;
   right: auto;
   left: auto;
 }

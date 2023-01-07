@@ -35,7 +35,7 @@
 
 .keepScrolling {
     position: absolute;
-    bottom: 15%;
+    top: 70%;
     margin: auto;
     cursor: pointer;
 }

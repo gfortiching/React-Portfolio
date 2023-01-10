@@ -11,35 +11,6 @@
     padding: 5%;
 }
 
-/* Header */
-
-.header {
-  min-height: 100vh;
-  width: 90vw;
-  margin: auto;
-  background-color: rgba(146, 159, 224, 0.25);
-  border-radius: 1em;
-}
-
-.header h1 {
-  text-align: center;
-  position: sticky;
-  top: 15%;
-  bottom: 20%;
-  margin: 5vh 0;
-  padding: 5%;
-  font-size: 5vw;
-}
-
-header.details h2 span {
-  white-space: nowrap;
-}
-
-.header span h3 {
-  text-align: justify;
-  line-height: 1.5em;
-} 
-
 /* Details */
 
 .details {
@@ -50,7 +21,7 @@ header.details h2 span {
   border-radius: 1em;
 }
 
-.details h2 {
+.details h1 {
   position: sticky;
   top: 15%;
   bottom: 10%;
@@ -59,20 +30,25 @@ header.details h2 span {
   font-weight: 700;
 }
 
-.details:nth-of-type(1) {
-  background-image: linear-gradient(to right, #263f618e, #6d91c39b);}
+/* .details:nth-of-type(1) {
+  background-image: linear-gradient(to left top, #3372c6, #4a80cc, #5f8dd1, #729bd7, #6582aa);
+}
 
 .details:nth-of-type(2) {
-  background-image: linear-gradient(to right, #263f618e, #8aba90a7);}
+  background-image: linear-gradient(to left top, #3372c6, #0091d4, #00acd7, #4bc5d5, #5d8b9d);
+}
 
 .details:nth-of-type(3) {
-  background-image: linear-gradient(to right, #263f618e, #6d91c39b);}
+  background-image: linear-gradient(to left top, #3372c6, #4a80cc, #5f8dd1, #729bd7, #6582aa);
+}
 
 .details:nth-of-type(4) {
-  background-image: linear-gradient(to right, #263f618e, #8aba90a7);}
+  background-image: linear-gradient(to left top, #3372c6, #0091d4, #00acd7, #4bc5d5, #5d8b9d);
+}
 
 .details:nth-of-type(5) {
-  background-image: linear-gradient(to right, #263f618e, #6d91c39b);}
+  background-image: linear-gradient(to left top, #3372c6, #4a80cc, #5f8dd1, #729bd7, #6582aa);
+} */
 
 
 .text {
@@ -106,12 +82,12 @@ header.details h2 span {
 
 .details:nth-of-type(4) .box img {
   display: block;
-  width: 150px;
+  width: 120px;
   aspect-ratio: 2/1;
   height: auto;
   object-fit: contain;
   padding: 2%;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.75);
   border-radius: 1em;
 }
 
@@ -175,13 +151,72 @@ header.details h2 span {
   text-decoration: none;
 }
 
+/* Skill */
+
+.skill {
+  display: grid;
+  grid: "one two" auto "three three" auto "four five" auto "six six" auto;
+  height: auto;
+  width: 90%;
+  margin-left: auto;
+  position: sticky;
+  top: 20%;
+}
+
+.skill span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10%;
+}
+
+.skill img {
+  width: 80px;
+  aspect-ratio: 2/1;
+  height: auto;
+  object-fit: contain;
+}
+
+.skill h4 {
+  margin-left: 10px;
+}
+
+.skill span:nth-child(1) {
+  grid-area: one;
+  justify-content: center;
+}
+
+.skill span:nth-child(2) {
+  grid-area: two;
+  justify-content: center;
+}
+
+.skill span:nth-child(3) {
+  grid-area: three;
+  justify-content: center;
+}
+
+.skill span:nth-child(4) {
+  grid-area: four;
+  justify-content: center;
+}
+
+.skill span:nth-child(5) {
+  grid-area: five;
+  justify-content: center;
+}
+
+.skill span:nth-child(6) {
+  grid-area: six;
+  justify-content: center;
+}
+
 /* Text Area */
 
 .text p {
   font-size: 1em;
   font-weight: 700;
   color: inherit;
-  text-align: justify;
 }
 
 @media all and (min-width: 769px) and (max-width: 1200px) {
@@ -192,11 +227,7 @@ header.details h2 span {
 
 @media all and (max-width: 768px) {
 
-  .header h1 {
-    font-size: 2.5em;
-  }
-
-  .details h2 {
+  .details h1 {
     position: static;
     margin: 2em 1em;
   }
@@ -226,11 +257,19 @@ header.details h2 span {
   .details:nth-of-type(4) .box img, .details:nth-of-type(5) .box img {
     width: 120px;
   }
+
+  .skill {
+    margin: auto;
+  }
 }
 
 @media all and (max-width: 576px) {
 
-  .details h2 {
+  .text {
+    text-align: center;
+  }
+
+  .details h1 {
     position: static;
     text-align: center;
   }
@@ -244,12 +283,21 @@ header.details h2 span {
   .box span h4 {
     text-align: center;
   }
-}
 
-.hr {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  margin: auto;
-  background-color: white;
+  .skill span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10%;
+  }
+
+  .skill {
+    margin: auto;
+    grid: "one" auto "two" auto "three" auto "four" auto "five" auto "six" auto;
+  }
+
+  .skill h4 {
+    margin: 5%;
+  }
 }

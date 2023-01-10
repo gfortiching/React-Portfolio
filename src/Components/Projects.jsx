@@ -1,7 +1,5 @@
-import { useRef } from 'react';
+import {React, useRef } from 'react';
 import AOS from "aos";
-
-import React from "react";
 import "./CSS/Projects.css";
 import "./CSS/Mini Project.css"
 import RootsAndTools from "./Images/MP1.PNG"
@@ -23,8 +21,8 @@ function Projects() {
     <main className="portfolioBg main">
     <div className='kodego'><img src={Kodego} alt="" /></div>
       <article className="checkOut">
-          <div data-aos="fade-right">
-            <h1 className='arvo'>CHECK OUT SOME OF MY KODEGO PROJECTS</h1>
+          <div className='waviy' data-aos="fade-right">
+            <span className='arvo'>CHECK OUT SOME OF MY KODEGO PROJECTS</span>
           </div>
       </article>
       <div className="keepScrolling" onClick={() => Scroll(mp1)}>
@@ -34,38 +32,53 @@ function Projects() {
 
     <section className="main" ref={mp1}>
       <header data-aos="fade-right">
-        <h1 className='arvo text-center text-sm-start mt-5 mb-5'>Projects</h1>
+        <h1 className='arvo text-center text-sm-start mt-5 mb-5'>PROJECTS</h1>
       </header>
       <div className='portfolioContainer'>
         <div data-aos="fade-right">
-          <h2 className='arvo text-center text-sm-start mt-4 mb-4'>KodeGo Mini Projects</h2>
+          <h2 className='arvo text-center text-sm-start mt-4 mb-5'>KodeGo Projects</h2>
         </div>
         <div className='flexContainer d-flex justify-content-center flex-column flex-md-row' data-aos="zoom-in">
-          <article className="miniProject">
-              <div className="miniProjectImg">
+          <article className="project">
+              <div className="projectImg">
                 <a href='https://rootsandtools.netlify.app/index.html' target="blank">
                   <img src={RootsAndTools} alt="" loading="lazy"/>
                 </a>
               </div>
-              <div className="miniProjectText">
-                <h2 className='mb-4 lato'>Mini Project 1</h2>
-                <h1 className='mb-3 arvo'>Roots and Tools Essentials</h1>
-                <p>Roots and Tools Essentials was built using HTML, CSS and Bootstrap. My inspiration for this project and niche is my hobby for succulents.</p>
+              <div className="projectText">
+                <h3 className='mb-4 arvo'>Mini Project 1</h3>
+                <h4 className='mb-3 arvo'>Roots and Tools Essentials</h4>
+                <h5 style={{color: "#00F587"}}>#HTML  #CSS #Bootstrap #ECommerce</h5>
               </div>
           </article>
-          <article className="miniProject">
-              <div className="miniProjectImg">
+          <article className="project">
+              <div className="projectImg">
                 <a href='https://little-wizards.netlify.app/index.html' target="blank">
                   <img src={LittleWizards} alt="" loading="lazy"/>
                 </a>
               </div>
-              <div className="miniProjectText2">
-                <h2 className='mb-4 lato'>Mini Project 2</h2>
-                <h1 className='mb-3 arvo'>Little Wizards</h1>
-                <p>Little Wizards was built using HTML, CSS, Bootstrap and JavaScript. Our goal for this KodeGo Project is to create an eLearning website using HTML, CSS, Bootstrap and JavaScript.</p>
+              <div className="projectText">
+                <h3 className='mb-4 arvo'>Mini Project 2</h3>
+                <h4 className='mb-3 arvo'>Little Wizards</h4>
+                <h5 style={{color: "#833ABA"}}>#HTML #CSS #Bootstrap #JavaScript #ELearning</h5>
               </div>
           </article>
         </div>
+        <div className='flexContainer d-flex justify-content-center flex-column flex-md-row' data-aos="zoom-in">
+          <article className="project">
+              <div className="projectImg">
+                <a href='https://rootsandtools.netlify.app/index.html' target="blank">
+                  <img src={RootsAndTools} alt="" loading="lazy"/>
+                </a>
+              </div>
+              <div className="projectText">
+                <h3 className='mb-4 arvo'>Capstone</h3>
+                <h4 className='mb-3 arvo'>Project Title</h4>
+                <h5 style={{color: "#833ABA"}}>#PHP #HTML #CSS #Bootstrap.</h5>
+              </div>
+          </article>
+        </div>
+        <h3 className='arvo'>More Projects Soon...</h3>
       </div>
     </section>
     

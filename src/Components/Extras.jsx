@@ -3,13 +3,13 @@ function Extras() {
     return (
         <>
         <section className="main portfolio align-items-end justify-content-start">
-          <article className='one' data-aos="fade-right">
-              <p className="lato textStart">Are you still there?</p>
+          <article className='one'>
+                <p className="lato textStart" data-aos="fade-right">Are you still there?</p>
           </article>
         </section>
-        <section className="main portfolio align-items-end justify-content-end">
+        <section className="main portfolio align-items-end justify-content-center">
           <article className='two' data-aos="fade-down">
-              <p className="lato textCenter">Oh, hello!</p>
+              <p className="lato textCenter">Hello!</p>
           </article>
         </section>
         <section className="main portfolio align-items-center justify-content-center">

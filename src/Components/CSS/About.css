@@ -13,7 +13,8 @@
 .blackPortrait {
     height: 90vh;
     max-width: 90vw;
-    margin: auto;
+    margin-top: auto;
+    margin-right: 2%;
     object-fit: cover;
 }
 

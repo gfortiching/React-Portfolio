@@ -45,11 +45,11 @@ function App() {
       style={{height: "100vh"}}
     >
         <ul className="drawer-ul">
-          <li className="arvo me-5" onClick={() => Scroll(intro)}>gabriel</li>
-          <li className="lato" onClick={() => Scroll(projects)}>projects</li>
-          <li className="lato" onClick={() => Scroll(about)}>about</li>
-          <li className="lato" onClick={() => Scroll(contact)}>contact</li>
-          <li className="lato" onClick={() => Scroll(links)}>links</li>
+          <li className="primary me-5" onClick={() => Scroll(intro)}>gabriel</li>
+          <li className="secondary" onClick={() => Scroll(projects)}>projects</li>
+          <li className="secondary" onClick={() => Scroll(about)}>about</li>
+          <li className="secondary" onClick={() => Scroll(contact)}>contact</li>
+          <li className="secondary" onClick={() => Scroll(links)}>links</li>
           <li>
             <img id="sun" className={darkMode ? 'on' : 'off'   } src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt=""/>
             <Switch rounded={false} onToggle={() => setDarkMode(!darkMode)}/>
@@ -84,11 +84,11 @@ function App() {
       <nav className="navbar">
         <div className="navContainer">
           <ul className={darkMode ? 'navDark' : 'navLight'}>
-            <li className="arvo me-5" onClick={() => Scroll(intro)}>gabriel</li>
-            <li className="lato" onClick={() => Scroll(projects)}>projects</li>
-            <li className="lato" onClick={() => Scroll(about)}>about</li>
-            <li className="lato" onClick={() => Scroll(contact)}>contact</li>
-            <li className="lato" onClick={() => Scroll(links)}>links</li>
+            <li className="primary me-5" onClick={() => Scroll(intro)}>gabriel</li>
+            <li className="secondary" onClick={() => Scroll(projects)}>projects</li>
+            <li className="secondary" onClick={() => Scroll(about)}>about</li>
+            <li className="secondary" onClick={() => Scroll(contact)}>contact</li>
+            <li className="secondary" onClick={() => Scroll(links)}>links</li>
             <li style={{marginLeft: "auto", marginRight: "0"}}>
 
             <Switch rounded={false} onToggle={() => setDarkMode(!darkMode)}/>

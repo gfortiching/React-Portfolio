@@ -14,7 +14,8 @@ export default function Contact() {
     <>
     <section className="main">
         <Header header="Contact" />
-        <h2 className="primary text-center" data-aos="fade-up">Get In Touch!</h2>
+        <br />
+        <h6 className="primary text-center" data-aos="fade-up">Get In Touch!</h6>
         <div className="contactContainer primary">
             <span>
                 <div className="child" data-aos="fade-up">

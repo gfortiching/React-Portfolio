@@ -16,10 +16,10 @@
 }
 
 .socials {
-    margin: 1%;
+    margin: 5%;
     padding: 2%;
     border-radius: 1em;
-    background-image: linear-gradient(to left top, #3373c680, #0099d580, #00b6c38f, #53b2cc92, #85c6dc);
+    background-image: linear-gradient(to left top, #3373c653, #0099d55d, #00b6c356, #53b2cc5d, #85c6dc85);
 }
 
 .socials a {

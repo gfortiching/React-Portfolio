@@ -22,26 +22,42 @@ function AboutMe() {
     return (
     <>
     <main className="aboutContainer">
+    <img className='blackPortrait' src={Portrait} alt='' data-aos="fade-left" />
       <section className="header main">
         <Header header="About Me"/>
-        <div className="lato d-none d-lg-flex flex-column"  data-aos="fade-up">
+        <div className="lato"  data-aos="fade-up">
           <span>
             <h1 className='mt-5'>G'Day!<img src='https://cdn-icons-png.flaticon.com/512/2121/2121101.png' alt="Code" className='icons' /></h1>
             <h1 className='mt-3'>I'm Jose Gabriel F. Fabileña.</h1>
           </span>
         </div>
       </section>
-      <img className='blackPortrait' src={Portrait} alt='' data-aos="fade-left" />
+
+      <section className="aboutContainer">
+      <article className='about-text-container' data-aos="fade-right">
+        <p className='mb-5 primary'>Overview <img src='https://cdn-icons-png.flaticon.com/512/7756/7756168.png' alt="Code" className='icons' /></p>
+        <span className='about-text secondary'>
+            Pursuing Web Development <img src='https://cdn-icons-png.flaticon.com/512/3308/3308395.png' alt="Code" className='icons' /> as a career shifter,<br /> my next goal is <em >to obtain a Junior Web Developer <img src='https://cdn-icons-png.flaticon.com/512/3242/3242313.png' alt="Code" className='icons' /> position</em> that assists in building websites, apps or softwares <img src='https://cdn-icons-png.flaticon.com/512/9307/9307617.png' alt="Code" className='icons' />.
+            <br />
+            <br /> 
+            I am excited to develop my skills and discover my potential while working with a team of experts and professionals <img src='https://cdn-icons-png.flaticon.com/512/8955/8955033.png' alt="Code" className='icons' />.
+        </span>
+        <br /><br />
+        <p className='mt-5 mb-5 primary'>Web Development Journey <img src='https://cdn-icons-png.flaticon.com/512/3059/3059997.png' alt="Code" className='icons' /></p>
+        <span className='about-text secondary'>
+            I started learning Web Development last August 2022. I first practiced at FreeCodeCamp.org, where I started learning how to code using HTML <img src='https://cdn-icons-png.flaticon.com/512/1051/1051277.png' alt="Code" className='icons' /> and CSS <img src='https://cdn-icons-png.flaticon.com/512/732/732190.png' alt="Code" className='icons' />. 
+            <br />
+            <br />  
+            My interests in Cryptocurrencies, NFTs, Trading and Financial Technology led me to start learning how to code.
+            <br />
+            <br />
+            I realized I was coding everyday, and I thought it was fun.
+        </span>
+      </article>
+    </section>
     </main>
     
-    <div className="aboutContainer">
-      <section className="header main" data-aos="fade-right">
-      <span>
-            <h3 className="mb-3">As a career shifter pursuing <u>Web Development</u> <img src='https://cdn-icons-png.flaticon.com/512/3308/3308395.png' alt="Code" className='icons' />, my goal is <em >to obtain a <u>Junior Web Developer</u> <img src='https://cdn-icons-png.flaticon.com/512/1005/1005141.png' alt="Code" className='icons' /> position</em> that assists in building <img src='https://cdn-icons-png.flaticon.com/512/2238/2238255.png' alt="Code" className='icons' /> websites, apps or softwares.</h3>
-            <h3>I am excited to develop my skills and discover my potential while working with a team of experts and professionals.</h3>
-          </span>
-      </section>
-    </div>
+
 
     <main ref={details} className="main">
       <article className="details">
@@ -92,31 +108,31 @@ function AboutMe() {
         <div className="summary">
           <div className="courses" data-aos="fade-up">
             <a href="https://www.coursera.org/learn/project-management-foundations" target="blank">
-              <h4>Google Project Management</h4>
+              <p>Google Project Management</p>
             </a>
             <img src={Coursera} alt="" />
           </div>
           <div className="courses" data-aos="fade-up">
             <a href="https://www.coursera.org/learn/foundations-user-experience-design" target="blank">
-              <h4>Google UX Design</h4>
+              <p>Google UX Design</p>
             </a>
            <img src={Coursera} alt="" />
           </div>
           <div className="courses" data-aos="fade-up">
             <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="blank">
-              <h4>(New) Responsive Web Design</h4>
+              <p>(New) Responsive Web Design</p>
             </a>
             <img src={FreeCodeCamp} alt="" />
           </div>
           <div className="courses" data-aos="fade-up">
             <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="blank">
-              <h4>JavaScript Algorithms and Data Structures</h4>
+              <p>JavaScript Algorithms and Data Structures</p>
             </a>
             <img src={FreeCodeCamp} alt="" />
           </div>
           <div className="courses" data-aos="fade-up">
             <a href="https://www.freecodecamp.org/learn/front-end-development-libraries/" target="blank">
-              <h4>Front End Development Libraries</h4>
+              <p>Front End Development Libraries</p>
             </a>
             <img src={FreeCodeCamp} alt="" />
           </div>

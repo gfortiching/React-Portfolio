@@ -111,9 +111,9 @@
   height: auto;
   width: auto;
   width: 70%;
-  padding: 2%;
+  padding: 5%;
   border-radius: 1em;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   object-fit: contain;
   background-image: linear-gradient(to left top, #3373c680, #0099d580, #00b6c38f, #53b2cc92, #85c6dc);
 }
@@ -121,6 +121,10 @@
 .courses a {
   color: inherit;
   text-decoration: none;
+}
+
+.courses p {
+  font-size: 20px;
 }
 
 /* Skill */
@@ -150,6 +154,7 @@
 }
 
 .skill p {
+  font-size: 20px;
   margin-left: 10px;
 }
 
@@ -216,14 +221,11 @@
   }
 
   .courses {
-    width: auto;
-    padding: 0;
-  }
-
-  .courses {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: auto;
+    padding: 0;
   }
 
   .details:nth-of-type(4) .courses img, .details:nth-of-type(5) .courses img {
@@ -246,13 +248,15 @@
     text-align: center;
   }
 
-  .details:nth-of-type(4) .courses span, .details:nth-of-type(5) .courses span {    
+  .details:nth-of-type(4) .courses {    
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .courses span h4 {
+  .courses p {
+    font-size: 18px;
+    margin: 5% auto;
     text-align: center;
   }
 
